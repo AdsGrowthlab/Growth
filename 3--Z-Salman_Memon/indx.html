@@ -22,7 +22,6 @@ rel="stylesheet">
      META PIXEL
      PIXEL ID: 1536858698242545
      PAGEVIEW ONLY
-     NO SUBSCRIBE EVENT
      ===================================================== -->
 
 <script>
@@ -54,16 +53,10 @@ rel="stylesheet">
 (window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-
-/* ONLY ONE PIXEL INITIALIZATION */
 fbq('init', '1536858698242545');
-
-
-/* ONLY ONE PAGEVIEW */
 fbq('track', 'PageView');
 
 </script>
-
 
 <noscript>
 <img
@@ -101,12 +94,10 @@ src="https://www.facebook.com/tr?id=1536858698242545&ev=PageView&noscript=1"
     --border:rgba(255,255,255,.08);
 }
 
-
 html,
 body{
     min-height:100%;
 }
-
 
 body{
 
@@ -135,6 +126,10 @@ body{
     overflow-x:hidden;
 }
 
+
+/* =========================
+   CONTAINER
+   ========================= */
 
 .container{
 
@@ -188,7 +183,6 @@ body{
     font-weight:600;
 }
 
-
 .top-dot{
 
     width:8px;
@@ -215,7 +209,6 @@ body{
     margin-bottom:14px;
 }
 
-
 .avatar{
 
     width:122px;
@@ -237,7 +230,6 @@ body{
         0 15px 40px rgba(0,0,0,.55);
 }
 
-
 .avatar img{
 
     width:100%;
@@ -250,7 +242,9 @@ body{
 }
 
 
-/* VERIFIED BADGE */
+/* =========================
+   VERIFIED BADGE
+   ========================= */
 
 .badge{
 
@@ -346,14 +340,12 @@ body{
     color:#d2d7e2;
 }
 
-
 .stars{
 
     color:var(--gold);
 
     letter-spacing:2px;
 }
-
 
 .rating small{
 
@@ -416,18 +408,18 @@ body{
     touch-action:manipulation;
 }
 
-
 .btn:active{
 
     transform:scale(.98);
 }
 
 
-/*
- Prevent repeated rapid clicks
-*/
+/* =========================
+   PROCESSING
+   ========================= */
 
-.btn.processing{
+.btn.processing,
+.btn-secondary.processing{
 
     opacity:.55;
 
@@ -455,7 +447,6 @@ body{
         28px;
 }
 
-
 .stat{
 
     flex:1;
@@ -476,7 +467,6 @@ body{
     border:1px solid var(--border);
 }
 
-
 .stat-num{
 
     font-family:'Sora',sans-serif;
@@ -487,7 +477,6 @@ body{
 
     color:var(--gold);
 }
-
 
 .stat-label{
 
@@ -517,7 +506,6 @@ body{
 
     margin-bottom:8px;
 }
-
 
 .pitch span{
 
@@ -552,7 +540,6 @@ body{
     margin-bottom:20px;
 }
 
-
 .feature{
 
     display:flex;
@@ -571,7 +558,6 @@ body{
 
     border:1px solid var(--border);
 }
-
 
 .feature-icon{
 
@@ -595,7 +581,6 @@ body{
 
     font-size:16px;
 }
-
 
 .feature-text{
 
@@ -652,18 +637,9 @@ body{
         transform .15s ease;
 }
 
-
 .btn-secondary:active{
 
     transform:scale(.98);
-}
-
-
-.btn-secondary.processing{
-
-    opacity:.55;
-
-    pointer-events:none;
 }
 
 
@@ -689,7 +665,6 @@ body{
 
     text-align:center;
 }
-
 
 .trust strong{
 
@@ -734,7 +709,6 @@ body{
         padding-bottom:35px;
     }
 
-
     .avatar{
 
         width:110px;
@@ -742,18 +716,15 @@ body{
         height:110px;
     }
 
-
     .name{
 
         font-size:22px;
     }
 
-
     .pitch{
 
         font-size:16px;
     }
-
 
     .btn{
 
@@ -825,6 +796,24 @@ body{
 </div>
 
 
+<!-- =====================================================
+     FIRST / PRIMARY TELEGRAM CTA
+     SUBSCRIBE EVENT IS ONLY HERE
+     ===================================================== -->
+
+<a
+    class="btn telegram-first"
+    href="https://t.me/+sN3eaIxfc8Y4ZDY1"
+    data-location="top"
+    rel="noopener noreferrer"
+>
+
+    <span>✈️</span>
+
+    JOIN FREE TELEGRAM CHANNEL
+
+</a>
+
 
 <!-- STATS -->
 
@@ -881,8 +870,6 @@ body{
 </div>
 
 
-
-
 <div class="sub">
 
     Join the community for market education,
@@ -890,19 +877,6 @@ body{
 
 </div>
 
-<!-- PRIMARY TELEGRAM CTA -->
-
-<a
-    class="btn telegram-btn"
-    href="https://t.me/+sN3eaIxfc8Y4ZDY1"
-    data-location="top"
->
-
-    <span>✈️</span>
-
-    JOIN FREE TELEGRAM CHANNEL
-
-</a>
 
 <!-- FEATURES -->
 
@@ -964,12 +938,16 @@ body{
 </div>
 
 
-<!-- SECOND TELEGRAM CTA -->
+<!-- =====================================================
+     SECOND TELEGRAM CTA
+     NO SUBSCRIBE EVENT
+     ===================================================== -->
 
 <a
-    class="btn-secondary telegram-btn"
+    class="btn-secondary telegram-second"
     href="https://t.me/+sN3eaIxfc8Y4ZDY1"
     data-location="bottom"
+    rel="noopener noreferrer"
 >
 
     ✈️ Join Telegram — It's Free
@@ -1005,14 +983,16 @@ body{
 
 
 <!-- =====================================================
-     TELEGRAM BUTTON HANDLER
+     TELEGRAM BUTTON TRACKING
 
-     NO SUBSCRIBE EVENT
-     NO AUTO REDIRECT
-     NO AUTOMATIC CONVERSION EVENT
+     FIRST BUTTON:
+       - Subscribe event
+       - One event per page session
+       - Duplicate rapid clicks blocked
 
-     Only prevents rapid repeated clicks.
-     Normal user click goes directly to Telegram.
+     SECOND BUTTON:
+       - Direct Telegram navigation
+       - NO Subscribe event
      ===================================================== -->
 
 <script>
@@ -1021,26 +1001,57 @@ body{
 
     "use strict";
 
+
     const TELEGRAM_LINK =
         "https://t.me/+sN3eaIxfc8Y4ZDY1";
 
-    const buttons =
-        document.querySelectorAll(".telegram-btn");
 
-    let clickLocked = false;
+    const firstButton =
+        document.querySelector(".telegram-first");
 
 
-    buttons.forEach(function(button){
+    const secondButton =
+        document.querySelector(".telegram-second");
 
-        button.addEventListener(
+
+    let firstClickLocked = false;
+
+    let secondClickLocked = false;
+
+
+    /*
+     * Create a unique event ID.
+     */
+
+    function createEventId(){
+
+        return "telegram_subscribe_" +
+            Date.now() +
+            "_" +
+            Math.random()
+                .toString(36)
+                .slice(2,10);
+
+    }
+
+
+    /*
+     * FIRST BUTTON
+     *
+     * Subscribe event ONLY here.
+     */
+
+    if(firstButton){
+
+        firstButton.addEventListener(
             "click",
             function(event){
 
                 /*
-                 Block only rapid duplicate clicks.
-                */
+                 * Prevent rapid duplicate clicks.
+                 */
 
-                if(clickLocked){
+                if(firstClickLocked){
 
                     event.preventDefault();
 
@@ -1049,34 +1060,58 @@ body{
                 }
 
 
-                clickLocked = true;
+                firstClickLocked = true;
 
 
                 /*
-                 Disable the other CTA temporarily.
+                 * Temporarily stop normal navigation
+                 * so the browser can send the event.
                  */
 
-                buttons.forEach(function(btn){
-
-                    btn.classList.add("processing");
-
-                });
+                event.preventDefault();
 
 
-                /*
-                 Keep the requested Telegram destination.
-                */
-
-                button.href = TELEGRAM_LINK;
+                firstButton.classList.add("processing");
 
 
                 /*
-                 IMPORTANT:
-                 No fbq Subscribe event is fired here.
+                 * Fire Subscribe exactly once.
+                 */
 
-                 The browser continues with the user's
-                 genuine click to Telegram.
-                */
+                if(typeof window.fbq === "function"){
+
+                    window.fbq(
+                        "track",
+                        "Subscribe",
+                        {
+                            content_name:
+                                "Haji Salman Memon Telegram Community",
+
+                            content_category:
+                                "Telegram",
+
+                            button_location:
+                                "top"
+                        },
+                        {
+                            eventID:
+                                createEventId()
+                        }
+                    );
+
+                }
+
+
+                /*
+                 * Continue to Telegram.
+                 */
+
+                setTimeout(function(){
+
+                    window.location.href =
+                        TELEGRAM_LINK;
+
+                },700);
 
             },
             {
@@ -1084,7 +1119,46 @@ body{
             }
         );
 
-    });
+    }
+
+
+    /*
+     * SECOND BUTTON
+     *
+     * NO Subscribe event.
+     */
+
+    if(secondButton){
+
+        secondButton.addEventListener(
+            "click",
+            function(event){
+
+                if(secondClickLocked){
+
+                    event.preventDefault();
+
+                    return;
+
+                }
+
+
+                secondClickLocked = true;
+
+
+                secondButton.classList.add("processing");
+
+
+                /*
+                 * No fbq() call here.
+                 *
+                 * User goes directly to Telegram.
+                 */
+
+            }
+        );
+
+    }
 
 
 })();
