@@ -24,12 +24,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <!-- =====================================================
      META PIXEL
-     PIXEL ID: 1107978354995806
+     PIXEL ID: 1784207315909262
 
-     IMPORTANT:
-     ONLY ONE PIXEL
-     ONLY ONE INITIALIZATION
-     ONLY ONE PAGEVIEW
+     ONE PIXEL
+     ONE INITIALIZATION
+     ONE PAGEVIEW
      ===================================================== -->
 
 <script>
@@ -62,15 +61,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 'https://connect.facebook.net/en_US/fbevents.js');
 
 
-/* ONE PIXEL */
-fbq('init', '1107978354995806');
+/* =========================================
+   PIXEL INITIALIZATION
+   ========================================= */
+
+fbq('init', '1784207315909262');
 
 
-/* ONE PAGEVIEW */
+/* =========================================
+   PAGEVIEW — ONLY ONCE
+   ========================================= */
+
 fbq('track', 'PageView');
 
 </script>
 
+
+<!-- =====================================================
+     NOSCRIPT PIXEL
+     ===================================================== -->
 
 <noscript>
 
@@ -78,10 +87,11 @@ fbq('track', 'PageView');
 height="1"
 width="1"
 style="display:none"
-src="https://www.facebook.com/tr?id=1107978354995806&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1784207315909262&ev=PageView&noscript=1"
 />
 
 </noscript>
+
 
 <!-- ================= END META PIXEL ================= -->
 
@@ -1019,10 +1029,9 @@ h1{
 
 
         <!-- =================================================
-             TELEGRAM BUTTON
+             TELEGRAM CTA
 
-             IMPORTANT:
-             Subscribe is fired ONLY after actual click.
+             SUBSCRIBE FIRES ONLY ON REAL CLICK
              ================================================= -->
 
         <a
@@ -1080,10 +1089,10 @@ h1{
 
 
 <!-- =========================================================
-     META + TELEGRAM TRACKING
+     TELEGRAM + META SUBSCRIBE TRACKING
 
      PIXEL:
-     1107978354995806
+     1784207315909262
 
      TELEGRAM:
      https://t.me/+nmUqPpSOgWY0OWI1
@@ -1091,9 +1100,10 @@ h1{
      RULES:
      1. Subscribe only on actual CTA click
      2. No Subscribe on page load
-     3. No Subscribe on automatic redirect
+     3. No automatic Subscribe
      4. Duplicate clicks blocked
-     5. Pixel initialized only once
+     5. One Pixel initialization
+     6. One PageView
      ========================================================= -->
 
 
@@ -1138,6 +1148,17 @@ h1{
 
 
     /* =====================================================
+       CHECK BUTTON
+       ===================================================== */
+
+    if(!telegramBtn){
+
+        return;
+
+    }
+
+
+    /* =====================================================
        REAL USER CLICK
        ===================================================== */
 
@@ -1146,14 +1167,14 @@ h1{
         function(event){
 
             /*
-             * Stop normal navigation temporarily.
+             * Stop navigation temporarily.
              */
 
             event.preventDefault();
 
 
             /*
-             * Block double/rapid clicks.
+             * Prevent duplicate / rapid clicks.
              */
 
             if(clickLocked){
@@ -1167,7 +1188,7 @@ h1{
 
 
             /*
-             * Disable button.
+             * Disable button visually.
              */
 
             telegramBtn.classList.add(
@@ -1175,20 +1196,15 @@ h1{
             );
 
 
-            /*
-             * Track Subscribe ONLY here.
-             *
-             * This code does NOT fire Subscribe
-             * on page load.
-             */
+            /* =================================================
+               META SUBSCRIBE EVENT
+
+               Fires ONLY after actual CTA click.
+               ================================================= */
 
             if(
                 typeof window.fbq === "function"
             ){
-
-                const eventId =
-                    createEventId();
-
 
                 window.fbq(
                     "track",
@@ -1196,7 +1212,7 @@ h1{
                     {
 
                         content_name:
-                            "Telegram Community",
+                            "Navjot Barar Telegram Community",
 
                         content_category:
                             "Telegram",
@@ -1208,7 +1224,7 @@ h1{
                     {
 
                         eventID:
-                            eventId
+                            createEventId()
 
                     }
                 );
@@ -1216,10 +1232,12 @@ h1{
             }
 
 
-            /*
-             * Short delay allows the browser
-             * to start the Meta request.
-             */
+            /* =================================================
+               TELEGRAM REDIRECT
+
+               No automatic redirect.
+               No additional Subscribe event.
+               ================================================= */
 
             setTimeout(
                 function(){
