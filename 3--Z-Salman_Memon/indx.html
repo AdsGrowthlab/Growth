@@ -3,352 +3,848 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TOPG</title>
+<title>SALMAN MEMON TRADER</title>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="description"
+      content="Free daily Nifty & BankNifty levels, market analysis and stock market education.">
 
+<meta name="keywords"
+      content="Nifty Prediction, BankNifty Analysis, Stock Market India, Free Trading Calls">
 
-    <!-- =====================================================
-         META PIXEL
-         PIXEL ID: 1598226488678975
-         ONLY ONE PIXEL
-         ONLY ONE INITIALIZATION
-         ONLY ONE PAGEVIEW
-         ===================================================== -->
+<meta property="og:title" content="HAJI SALMAN MEMON">
 
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {
-        if(f.fbq)return;
+<meta property="og:description"
+      content="Join traders for FREE daily market education.">
 
-        n=f.fbq=function(){
-            n.callMethod ?
-            n.callMethod.apply(n,arguments) :
-            n.queue.push(arguments)
-        };
+<meta property="og:image"
+      content="https://github.com/itssky72001-ui/Haji/releases/download/Haji/WhatsApp.Image.2026-08-08.at.4.25.22.PM.jpeg">
 
-        if(!f._fbq)f._fbq=n;
+<meta property="og:type" content="website">
 
-        n.push=n;
-        n.loaded=!0;
-        n.version='2.0';
-        n.queue=[];
 
-        t=b.createElement(e);
-        t.async=!0;
-        t.src=v;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s);
+<link
+href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
 
-    }(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
 
+<!-- =====================================================
+     META PIXEL
+     ONLY PIXEL:
+     1598226488678975
 
-    /* ONLY ONE PIXEL */
-    fbq('init', '1598226488678975');
+     ONE INITIALIZATION
+     ONE PAGEVIEW
+     ===================================================== -->
 
+<script>
+!function(f,b,e,v,n,t,s)
+{
+    if(f.fbq)return;
 
-    /* ONLY ONE PAGEVIEW */
-    fbq('track', 'PageView');
+    n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+    };
 
-    </script>
+    if(!f._fbq)f._fbq=n;
 
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
 
-    <noscript>
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
 
-        <img
-            height="1"
-            width="1"
-            style="display:none"
-            src="https://www.facebook.com/tr?id=1598226488678975&ev=PageView&noscript=1"
-        >
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s);
 
-    </noscript>
+}
+(window, document, 'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-    <!-- ================= END META PIXEL ================= -->
 
+/* ONLY ONE PIXEL */
+fbq('init', '1598226488678975');
 
-    <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+/* ONLY ONE PAGEVIEW */
+fbq('track', 'PageView');
 
+</script>
 
-        body {
-            height: 100vh;
 
-            display: flex;
+<noscript>
+<img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=1598226488678975&ev=PageView&noscript=1"
+/>
+</noscript>
 
-            justify-content: center;
-            align-items: center;
+<!-- ================= END META PIXEL ================= -->
 
-            background: #0f172a;
 
-            color: white;
-        }
+<style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* CARD */
 
-        .card {
-            width: 350px;
+:root{
 
-            padding: 40px 30px;
+    --bg:#07080d;
 
-            border-radius: 20px;
+    --surface:#10131c;
 
-            background:
-                rgba(255, 255, 255, 0.05);
+    --surface-2:#161a26;
 
-            backdrop-filter: blur(20px);
+    --line:rgba(255,255,255,.08);
 
-            border:
-                1px solid
-                rgba(255, 255, 255, 0.15);
+    --text:#f2f4f8;
 
-            text-align: center;
+    --muted:#8b93a7;
 
-            box-shadow:
-                0 0px 80px
-                rgba(0, 0, 0, .6);
+    --gold:#f5c451;
 
-            animation:
-                float 4s ease-in-out infinite;
-        }
+    --gold-2:#c9922c;
 
+    --green:#25d366;
 
-        @keyframes float {
+}
 
-            0%,
-            100% {
-                transform: translateY(0)
-            }
 
-            50% {
-                transform: translateY(-10px)
-            }
+html,
+body{
+    background:var(--bg);
+}
 
-        }
 
+body{
 
-        .profile {
+    font-family:'Inter',Arial,sans-serif;
 
-            width: 110px;
-            height: 110px;
+    color:var(--text);
 
-            border-radius: 50%;
+    min-height:100vh;
 
-            border:
-                4px solid
-                white;
+    display:flex;
 
-            object-fit: cover;
+    justify-content:center;
 
-            margin-bottom: 15px;
+    background:
 
-        }
+        radial-gradient(
+            600px 320px at 50% -60px,
+            rgba(245,196,81,.16),
+            transparent 70%
+        ),
 
+        radial-gradient(
+            500px 300px at 100% 40%,
+            rgba(80,120,255,.07),
+            transparent 70%
+        ),
 
-        h2 {
+        var(--bg);
 
-            margin-bottom: 10px;
+    -webkit-font-smoothing:antialiased;
 
-        }
+}
 
 
-        .text {
+.container{
 
-            font-size: 14px;
+    max-width:460px;
 
-            line-height: 1.6;
+    width:100%;
 
-            opacity: .9;
+    padding:36px 16px 48px;
 
-            margin-bottom: 25px;
+    display:flex;
 
-        }
+    flex-direction:column;
 
+    align-items:center;
 
-        /* BUTTON */
+}
 
-        .btn {
 
-            display: inline-flex;
+.top-bar{
 
-            align-items: center;
+    background:rgba(37,211,102,.1);
 
-            gap: 12px;
+    border:1px solid rgba(37,211,102,.25);
 
-            padding:
-                15px 32px;
+    color:#7ff0a8;
 
-            border-radius: 50px;
+    font-weight:600;
 
-            background:
-                linear-gradient(
-                    45deg,
-                    #6366f1,
-                    #06b6d4
-                );
+    font-size:12.5px;
 
-            color: white;
+    padding:8px 20px;
 
-            text-decoration: none;
+    border-radius:50px;
 
-            font-weight: bold;
+    margin-bottom:26px;
 
-            font-size: 16px;
+    display:flex;
 
-            position: relative;
+    align-items:center;
 
-            transition: .4s;
+    gap:8px;
 
-            overflow: hidden;
+    letter-spacing:.2px;
 
-        }
+}
 
 
-        .btn:hover {
+.top-bar i{
 
-            transform:
-                scale(1.1);
+    width:8px;
 
-            box-shadow:
-                0 0 30px
-                #06b6d4;
+    height:8px;
 
-        }
+    background:var(--green);
 
+    border-radius:50%;
 
-        /* SPARKLE ANIMATION */
+    animation:blink 1.2s infinite;
 
-        .btn span {
+    box-shadow:0 0 10px var(--green);
 
-            position: absolute;
+}
 
-            width: 6px;
-            height: 6px;
 
-            background: white;
+@keyframes blink{
 
-            border-radius: 50%;
+    0%,100%{
+        opacity:1;
+    }
 
-            animation:
-                spark 3s infinite;
+    50%{
+        opacity:.25;
+    }
 
-        }
+}
 
 
-        .btn span:nth-child(1) {
+.avatar-wrap{
 
-            top: -10px;
-            left: 20%;
+    position:relative;
 
-        }
+    margin-bottom:6px;
 
+}
 
-        .btn span:nth-child(2) {
 
-            top: -10px;
-            left: 50%;
+.avatar{
 
-            animation-delay: 1s;
+    width:122px;
 
-        }
+    height:122px;
 
+    border-radius:50%;
 
-        .btn span:nth-child(3) {
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold),
+            var(--gold-2)
+        );
 
-            top: -10px;
-            left: 80%;
+    position:relative;
 
-            animation-delay: 2s;
+    border:3px solid rgba(245,196,81,.55);
 
-        }
+    box-shadow:
 
+        0 0 0 8px rgba(245,196,81,.07),
 
-        @keyframes spark {
+        0 18px 40px rgba(0,0,0,.6);
 
-            0% {
+    display:flex;
 
-                transform:
-                    translateY(0);
+    align-items:center;
 
-                opacity: 1;
+    justify-content:center;
 
-            }
+    overflow:hidden;
 
-            100% {
+}
 
-                transform:
-                    translateY(-40px);
 
-                opacity: 0;
+.avatar img{
 
-            }
+    width:100%;
 
-        }
+    height:100%;
 
+    object-fit:cover;
 
-        /* COUNTDOWN */
+}
 
-        .timer {
 
-            margin-top: 15px;
+.badge{
 
-            font-size: 13px;
+    position:absolute;
 
-            opacity: .8;
+    bottom:4px;
 
-        }
+    right:4px;
 
+    width:28px;
 
-        /* DISCLAIMER */
+    height:28px;
 
-        .disclaimer {
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold),
+            var(--gold-2)
+        );
 
-            margin-top: 20px;
+    border:3px solid var(--bg);
 
-            font-size: 11px;
+    border-radius:50%;
 
-            opacity: .6;
+    display:flex;
 
-            text-align: center;
+    align-items:center;
 
-        }
+    justify-content:center;
 
+    color:#12141c;
 
-        .ads {
+    font-size:13px;
 
-            margin-top: 6px;
+    font-weight:800;
 
-            font-size: 12px;
+    z-index:2;
 
-            text-align: center;
+}
 
-        }
 
+.name{
 
-        .ads a {
+    font-family:'Sora',sans-serif;
 
-            color: #22c55e;
+    font-size:24px;
 
-            font-weight: bold;
+    font-weight:800;
 
-            text-decoration: none;
+    text-align:center;
 
-        }
+    margin:14px 0 5px;
 
-    </style>
+    letter-spacing:.4px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff,
+            #c8cddb
+        );
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+
+}
+
+
+.tagline{
+
+    color:var(--gold);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    letter-spacing:.3px;
+
+}
+
+
+.rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-bottom:22px;
+
+    font-size:13px;
+
+    color:#cfd5e3;
+
+}
+
+
+.rating .stars{
+
+    color:var(--gold);
+
+    letter-spacing:2px;
+
+}
+
+
+.rating small{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+}
+
+
+/* =====================================================
+   SINGLE TELEGRAM CTA
+   ===================================================== */
+
+.btn{
+
+    display:block;
+
+    width:100%;
+
+    max-width:380px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7d174,
+            var(--gold-2)
+        );
+
+    color:#14161f;
+
+    font-family:'Sora',sans-serif;
+
+    font-weight:800;
+
+    font-size:16px;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    margin-bottom:28px;
+
+    box-shadow:
+        0 10px 26px rgba(245,196,81,.22);
+
+    transition:
+        transform .15s,
+        box-shadow .15s,
+        opacity .15s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 14px 34px rgba(245,196,81,.32);
+
+}
+
+
+.btn.processing{
+
+    opacity:.65;
+
+    pointer-events:none;
+
+    transform:none;
+
+}
+
+
+.btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-60%;
+
+    width:40%;
+
+    height:100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.55),
+            transparent
+        );
+
+    animation:shine 3.2s infinite;
+
+}
+
+
+@keyframes shine{
+
+    0%{
+        left:-60%;
+    }
+
+    55%,100%{
+        left:130%;
+    }
+
+}
+
+
+/* =====================================================
+   STATS
+   ===================================================== */
+
+.stats{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:28px;
+
+    width:100%;
+
+    max-width:380px;
+
+}
+
+
+.stat{
+
+    flex:1;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--surface),
+            #0d1017
+        );
+
+    border:1px solid var(--line);
+
+    border-radius:16px;
+
+    padding:15px 8px;
+
+    text-align:center;
+
+}
+
+
+.stat-num{
+
+    font-family:'Sora',sans-serif;
+
+    font-size:19px;
+
+    font-weight:800;
+
+    color:var(--gold);
+
+}
+
+
+.stat-lbl{
+
+    font-size:11px;
+
+    color:var(--muted);
+
+    margin-top:3px;
+
+    letter-spacing:.3px;
+
+}
+
+
+/* =====================================================
+   PITCH
+   ===================================================== */
+
+.pitch{
+
+    font-family:'Sora',sans-serif;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    line-height:1.55;
+
+    margin-bottom:8px;
+
+}
+
+
+.pitch span{
+
+    color:var(--gold);
+
+}
+
+
+.sub{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    line-height:1.6;
+
+}
+
+
+/* =====================================================
+   URGENCY
+   ===================================================== */
+
+.urgency{
+
+    background:rgba(245,196,81,.08);
+
+    border:1px solid rgba(245,196,81,.22);
+
+    border-radius:50px;
+
+    padding:10px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:20px;
+
+    font-size:12.5px;
+
+    font-weight:600;
+
+    color:#ffd98a;
+
+    text-align:center;
+
+}
+
+
+/* =====================================================
+   FEATURES
+   ===================================================== */
+
+.features{
+
+    width:100%;
+
+    max-width:380px;
+
+    margin-bottom:20px;
+
+}
+
+
+.feat{
+
+    background:var(--surface);
+
+    border:1px solid var(--line);
+
+    border-radius:14px;
+
+    padding:14px 16px;
+
+    margin-bottom:9px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.feat-icon{
+
+    width:34px;
+
+    height:34px;
+
+    background:rgba(245,196,81,.1);
+
+    border:1px solid rgba(245,196,81,.2);
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:16px;
+
+    flex-shrink:0;
+
+}
+
+
+.feat-text{
+
+    font-size:13.5px;
+
+    font-weight:600;
+
+    color:#dfe4ee;
+
+}
+
+
+/* =====================================================
+   TRUST
+   ===================================================== */
+
+.trust{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:20px;
+
+    font-size:12px;
+
+    color:var(--muted);
+
+}
+
+
+.trust b{
+
+    color:#7ff0a8;
+
+}
+
+
+/* =====================================================
+   FREE TAG
+   ===================================================== */
+
+.free-tag{
+
+    color:var(--gold);
+
+    font-size:12px;
+
+    font-weight:600;
+
+    margin-bottom:28px;
+
+}
+
+
+/* =====================================================
+   DISCLAIMER
+   ===================================================== */
+
+.disc{
+
+    max-width:380px;
+
+    text-align:center;
+
+    color:#5d6478;
+
+    font-size:10.5px;
+
+    line-height:1.7;
+
+    padding-top:20px;
+
+    border-top:1px solid var(--line);
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media(max-width:380px){
+
+    .container{
+
+        padding-left:12px;
+
+        padding-right:12px;
+
+    }
+
+    .name{
+
+        font-size:21px;
+
+    }
+
+    .stats{
+
+        gap:6px;
+
+    }
+
+}
+
+
+</style>
 
 </head>
 
@@ -356,84 +852,216 @@
 <body>
 
 
-    <div>
+<div class="container">
 
 
-        <div class="card">
+    <!-- TOP BAR -->
 
+    <div class="top-bar">
+
+        <i></i>
+
+        5,947 traders online now
+
+    </div>
+
+
+    <!-- PROFILE -->
+
+    <div class="avatar-wrap">
+
+        <div class="avatar">
 
             <img
-                src="images.1.jpg"
-                class="profile"
-                alt="Profile"
+                src="https://github.com/itssky72001-ui/Haji/releases/download/Haji/WhatsApp.Image.2026-08-08.at.4.25.22.PM.jpeg"
+                alt="HAJI SALMAN MEMON"
+                loading="eager"
+                decoding="async"
             >
 
+        </div>
 
-            <h2>
-                📊 PANKAJ BHARDWAJ
-            </h2>
+        <div class="badge">
+            ✓
+        </div>
+
+    </div>
 
 
-            <div class="text">
+    <h1 class="name">
+        HAJI SALMAN MEMON
+    </h1>
 
-                Start learning with Expert Calls🔥
-                <br>
 
-                Trusted by 12,000+ Traders🌍
-                <br>
+    <div class="tagline">
+        🏆 India's No.1 Stock Market Channel
+    </div>
 
-                Join our Channel for daily updates✅
 
+    <div class="rating">
+
+        <span class="stars">
+            ★★★★★
+        </span>
+
+        <b>
+            4.9/5
+        </b>
+
+        <small>
+            (2,340 reviews)
+        </small>
+
+    </div>
+
+
+    <!-- =================================================
+         STATS
+         ================================================= -->
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <div class="stat-num">
+                50K+
             </div>
 
-
-            <a
-                class="btn"
-                href="https://t.me/+WPrTgvCm3K43ZmQ1"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-
-                <i class="fab fa-telegram"></i>
-
-                VIP Telegram group
-
-                <i class="fab fa-telegram"></i>
-
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </a>
-
-
-            <div class="timer">
-
-                Redirecting in
-                <span id="count">30</span>
-                seconds...
-
+            <div class="stat-lbl">
+                Members
             </div>
-
 
         </div>
 
 
-        <div class="disclaimer">
+        <div class="stat">
 
-            This channel is for educational and informational purposes only.
+            <div class="stat-num">
+                5+ Yrs
+            </div>
+
+            <div class="stat-lbl">
+                Experience
+            </div>
 
         </div>
 
 
-        <div class="ads">
+        <div class="stat">
 
-            <a
-                href="https://t.me/+WPrTgvCm3K43ZmQ1"
-                target="_blank"
-                rel="noopener noreferrer"
-            ></a>
+            <div class="stat-num">
+                95%
+            </div>
+
+            <div class="stat-lbl">
+                Accuracy
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PITCH -->
+
+    <div class="pitch">
+
+        Get <span>FREE</span> daily calls for
+        NIFTY, BANKNIFTY &amp; SENSEX
+
+    </div>
+
+
+    <div class="sub">
+
+        Join thousands of traders getting free
+        premium analysis daily
+
+    </div>
+
+
+    <!-- =================================================
+         SINGLE TELEGRAM BUTTON
+
+         Subscribe fires ONLY after this button
+         is actually clicked.
+         ================================================= -->
+
+    <a
+        class="btn"
+        id="telegramBtn"
+        href="https://t.me/+sN3eaIxfc8Y4ZDY1"
+        rel="noopener noreferrer"
+    >
+
+        Join Free Telegram Channel →
+
+    </a>
+
+
+    <!-- URGENCY -->
+
+    <div class="urgency">
+
+        🔥 7,589 people joined today —
+        Limited FREE access!
+
+    </div>
+
+
+    <!-- FEATURES -->
+
+    <div class="features">
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                📊
+            </div>
+
+            <div class="feat-text">
+                Daily Nifty &amp; BankNifty Levels
+            </div>
+
+        </div>
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                🎓
+            </div>
+
+            <div class="feat-text">
+                No Paid Tips – Purely Educational
+            </div>
+
+        </div>
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                ⏳
+            </div>
+
+            <div class="feat-text">
+                5+ Years of Market Experience
+            </div>
+
+        </div>
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                👥
+            </div>
+
+            <div class="feat-text">
+                50,000+ Subscribers Trust Us
+            </div>
 
         </div>
 
@@ -441,37 +1069,179 @@
     </div>
 
 
-    <!-- =====================================================
-         COUNTDOWN REDIRECT
-         ===================================================== -->
+    <!-- TRUST -->
 
-    <script>
+    <div class="trust">
 
-        let time = 30;
+        <b>
+            ✅ Verified Channel
+        </b>
 
-        let counter =
-            document.getElementById("count");
+        • Free Forever • No Spam
 
-
-        setInterval(function(){
-
-            time--;
-
-            counter.innerText = time;
+    </div>
 
 
-            if(time <= 0){
+    <div class="free-tag">
 
-                window.location.href =
-                    "https://t.me/+WPrTgvCm3K43ZmQ1";
+        ⏰ Limited time offer
+
+    </div>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="disc">
+
+        Disclaimer: This channel is for educational
+        and informational purposes only. We do not
+        provide investment advice or guaranteed
+        returns. Trading in the stock market involves
+        risk. Please consult your financial advisor
+        before making any investment decisions.
+
+    </div>
+
+
+</div>
+
+
+<!-- =====================================================
+     SUBSCRIBE TRACKING
+
+     PIXEL:
+     1598226488678975
+
+     RULES:
+     - Subscribe NOT fired on PageView
+     - Subscribe NOT fired automatically
+     - Subscribe fires only on CTA click
+     - Duplicate rapid clicks blocked
+     - Only one CTA
+     ===================================================== -->
+
+<script>
+
+(function(){
+
+    "use strict";
+
+
+    const TELEGRAM_LINK =
+        "https://t.me/+sN3eaIxfc8Y4ZDY1";
+
+
+    const telegramBtn =
+        document.getElementById("telegramBtn");
+
+
+    let clickLocked = false;
+
+
+    function createEventId(){
+
+        return (
+            "telegram_subscribe_" +
+            Date.now() +
+            "_" +
+            Math.random()
+                .toString(36)
+                .substring(2,10)
+        );
+
+    }
+
+
+    if(!telegramBtn){
+        return;
+    }
+
+
+    telegramBtn.addEventListener(
+        "click",
+        function(event){
+
+            /*
+             * Stop immediate navigation so
+             * Meta gets a chance to receive event.
+             */
+
+            event.preventDefault();
+
+
+            /*
+             * Block duplicate / rapid clicks.
+             */
+
+            if(clickLocked){
+                return;
+            }
+
+
+            clickLocked = true;
+
+
+            telegramBtn.classList.add(
+                "processing"
+            );
+
+
+            /*
+             * Subscribe fires ONLY because
+             * the visitor clicked the CTA.
+             */
+
+            if(
+                typeof window.fbq === "function"
+            ){
+
+                window.fbq(
+                    "track",
+                    "Subscribe",
+                    {
+                        content_name:
+                            "Haji Salman Memon Telegram Community",
+
+                        content_category:
+                            "Telegram",
+
+                        button_location:
+                            "single_cta"
+                    },
+                    {
+                        eventID:
+                            createEventId()
+                    }
+                );
 
             }
 
-        }, 1000);
 
-    </script>
+            /*
+             * Navigate after a short delay.
+             */
+
+            setTimeout(
+                function(){
+
+                    window.location.href =
+                        TELEGRAM_LINK;
+
+                },
+                600
+            );
+
+        },
+        {
+            passive:false
+        }
+    );
+
+
+})();
+
+</script>
 
 
 </body>
-
 </html>
