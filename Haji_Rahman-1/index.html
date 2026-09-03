@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================== CONFIG ===================== -->
 
 <title>HAJI MUSSABBIR RAHMAN</title>
 
@@ -24,7 +27,7 @@
 
 <!-- =====================================================
      META PIXEL
-     PIXEL ID: 1425955059385162
+     PIXEL ID: 1794040151752972
      ONLY ONE PIXEL
      ===================================================== -->
 
@@ -33,8 +36,7 @@
 {
     if(f.fbq)return;
 
-    n=f.fbq=function()
-    {
+    n=f.fbq=function(){
         n.callMethod ?
         n.callMethod.apply(n,arguments) :
         n.queue.push(arguments)
@@ -52,15 +54,15 @@
     t.src=v;
 
     s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s);
+    s.parentNode.insertBefore(t,s)
 
 }
-(window,document,'script',
+(window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','1425955059385162');
+fbq('init', '1794040151752972');
 
-fbq('track','PageView');
+fbq('track', 'PageView');
 </script>
 
 
@@ -69,11 +71,11 @@ fbq('track','PageView');
     height="1"
     width="1"
     style="display:none"
-    src="https://www.facebook.com/tr?id=1425955059385162&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1794040151752972&ev=PageView&noscript=1"
 />
 </noscript>
 
-<!-- END META PIXEL -->
+<!-- End Meta Pixel Code -->
 
 
 <style>
@@ -81,46 +83,33 @@ fbq('track','PageView');
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing:border-box
 }
 
 :root{
-
     --bg:#07080d;
     --surface:#10131c;
     --surface-2:#161a26;
     --line:rgba(255,255,255,.08);
-
     --text:#f2f4f8;
     --muted:#8b93a7;
-
     --gold:#f5c451;
     --gold-2:#c9922c;
-
     --green:#25d366;
 }
 
-
-html,
-body{
-    background:var(--bg);
+html,body{
+    background:var(--bg)
 }
 
-
 body{
-
     font-family:'Inter',Arial,sans-serif;
-
     color:var(--text);
-
     min-height:100vh;
-
     display:flex;
-
     justify-content:center;
 
     background:
-
         radial-gradient(
             600px 320px at 50% -60px,
             rgba(245,196,81,.16),
@@ -135,111 +124,61 @@ body{
 
         var(--bg);
 
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing:antialiased
 }
-
-
-/* =====================================================
-   CONTAINER
-   ===================================================== */
 
 .container{
-
     max-width:460px;
-
     width:100%;
-
     padding:36px 16px 48px;
-
     display:flex;
-
     flex-direction:column;
-
-    align-items:center;
+    align-items:center
 }
-
-
-/* =====================================================
-   TOP BAR
-   ===================================================== */
 
 .top-bar{
-
     background:rgba(37,211,102,.1);
-
     border:1px solid rgba(37,211,102,.25);
-
     color:#7ff0a8;
-
     font-weight:600;
-
     font-size:12.5px;
-
     padding:8px 20px;
-
     border-radius:50px;
-
     margin-bottom:26px;
-
     display:flex;
-
     align-items:center;
-
     gap:8px;
-
-    letter-spacing:.2px;
+    letter-spacing:.2px
 }
-
 
 .top-bar i{
-
     width:8px;
-
     height:8px;
-
     background:var(--green);
-
     border-radius:50%;
-
     animation:blink 1.2s infinite;
-
-    box-shadow:0 0 10px var(--green);
+    box-shadow:0 0 10px var(--green)
 }
 
-
 @keyframes blink{
-
     0%,100%{
-        opacity:1;
+        opacity:1
     }
 
     50%{
-        opacity:.25;
+        opacity:.25
     }
-
 }
-
-
-/* =====================================================
-   AVATAR
-   ===================================================== */
 
 .avatar-wrap{
-
     position:relative;
-
-    margin-bottom:6px;
+    margin-bottom:6px
 }
 
-
 .avatar{
-
     width:122px;
-
     height:122px;
-
     border-radius:50%;
-
     background:
         linear-gradient(
             135deg,
@@ -252,45 +191,26 @@ body{
     border:3px solid rgba(245,196,81,.55);
 
     box-shadow:
-
         0 0 0 8px rgba(245,196,81,.07),
-
         0 18px 40px rgba(0,0,0,.6);
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
-    overflow:hidden;
+    overflow:hidden
 }
-
 
 .avatar img{
-
     width:100%;
-
     height:100%;
-
-    object-fit:cover;
+    object-fit:cover
 }
 
-
-/* =====================================================
-   VERIFIED BADGE
-   ===================================================== */
-
 .badge{
-
     position:absolute;
-
     bottom:4px;
-
     right:4px;
-
     width:28px;
-
     height:28px;
 
     background:
@@ -301,41 +221,24 @@ body{
         );
 
     border:3px solid var(--bg);
-
     border-radius:50%;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     color:#12141c;
-
     font-size:13px;
-
     font-weight:800;
-
-    z-index:2;
+    z-index:2
 }
 
-
-/* =====================================================
-   NAME
-   ===================================================== */
-
 .name{
-
     font-family:'Sora',sans-serif;
-
     font-size:24px;
-
     font-weight:800;
-
     text-align:center;
-
     margin:14px 0 5px;
-
     letter-spacing:.4px;
 
     background:
@@ -346,81 +249,43 @@ body{
         );
 
     -webkit-background-clip:text;
-
     background-clip:text;
-
-    color:transparent;
+    color:transparent
 }
-
-
-/* =====================================================
-   TAGLINE
-   ===================================================== */
 
 .tagline{
-
     color:var(--gold);
-
     font-size:13px;
-
     font-weight:600;
-
     margin-bottom:8px;
-
-    letter-spacing:.3px;
+    letter-spacing:.3px
 }
-
-
-/* =====================================================
-   RATING
-   ===================================================== */
 
 .rating{
-
     display:flex;
-
     align-items:center;
-
     gap:6px;
-
     margin-bottom:22px;
-
     font-size:13px;
-
-    color:#cfd5e3;
+    color:#cfd5e3
 }
-
 
 .rating .stars{
-
     color:var(--gold);
-
-    letter-spacing:2px;
+    letter-spacing:2px
 }
-
 
 .rating small{
-
     color:var(--muted);
-
-    font-size:12px;
+    font-size:12px
 }
 
-
-/* =====================================================
-   BUTTON
-   ===================================================== */
-
 .btn{
-
     display:block;
-
     width:100%;
-
     max-width:380px;
 
     background:
-
         linear-gradient(
             135deg,
             #f7d174,
@@ -430,75 +295,44 @@ body{
     color:#14161f;
 
     font-family:'Sora',sans-serif;
-
     font-weight:800;
-
     font-size:16px;
 
     padding:16px;
 
     border-radius:16px;
-
     text-align:center;
-
     text-decoration:none;
 
     margin-bottom:22px;
 
     box-shadow:
-
-        0 10px 26px
-        rgba(245,196,81,.22);
+        0 10px 26px rgba(245,196,81,.22);
 
     transition:
         transform .15s,
         box-shadow .15s;
 
     position:relative;
-
-    overflow:hidden;
-
-    cursor:pointer;
-
-    -webkit-tap-highlight-color:transparent;
-
-    touch-action:manipulation;
+    overflow:hidden
 }
 
-
 .btn:hover{
-
     transform:translateY(-2px);
 
     box-shadow:
-
-        0 14px 34px
-        rgba(245,196,81,.32);
+        0 14px 34px rgba(245,196,81,.32)
 }
-
-
-.btn:active{
-
-    transform:translateY(0);
-}
-
 
 .btn::after{
-
     content:"";
-
     position:absolute;
-
     top:0;
-
     left:-60%;
-
     width:40%;
-
     height:100%;
 
     background:
-
         linear-gradient(
             120deg,
             transparent,
@@ -506,47 +340,67 @@ body{
             transparent
         );
 
-    animation:shine 3.2s infinite;
+    animation:shine 3.2s infinite
 }
-
 
 @keyframes shine{
 
     0%{
-        left:-60%;
+        left:-60%
     }
 
     55%,100%{
-        left:130%;
+        left:130%
     }
 
 }
 
-
-/* =====================================================
-   STATS
-   ===================================================== */
-
-.stats{
-
-    display:flex;
-
-    gap:10px;
-
-    margin-bottom:28px;
-
+.btn2{
+    display:block;
     width:100%;
-
     max-width:380px;
+
+    background:var(--surface-2);
+
+    border:1px solid var(--line);
+
+    color:var(--text);
+
+    font-family:'Sora',sans-serif;
+    font-weight:700;
+    font-size:15px;
+
+    padding:15px;
+
+    border-radius:16px;
+
+    text-align:center;
+    text-decoration:none;
+
+    margin-bottom:8px;
+
+    transition:
+        border-color .2s,
+        background .2s
 }
 
+.btn2:hover{
+    background:#1c2130;
+    border-color:rgba(245,196,81,.4)
+}
+
+.stats{
+    display:flex;
+    gap:10px;
+    margin-bottom:28px;
+    width:100%;
+    max-width:380px
+}
 
 .stat{
-
     flex:1;
 
     background:
-
         linear-gradient(
             180deg,
             var(--surface),
@@ -554,138 +408,77 @@ body{
         );
 
     border:1px solid var(--line);
-
     border-radius:16px;
 
     padding:15px 8px;
 
-    text-align:center;
+    text-align:center
 }
-
 
 .stat-num{
-
     font-family:'Sora',sans-serif;
-
     font-size:19px;
-
     font-weight:800;
-
-    color:var(--gold);
+    color:var(--gold)
 }
-
 
 .stat-lbl{
-
     font-size:11px;
-
     color:var(--muted);
-
     margin-top:3px;
-
-    letter-spacing:.3px;
+    letter-spacing:.3px
 }
-
-
-/* =====================================================
-   PITCH
-   ===================================================== */
 
 .pitch{
-
     font-family:'Sora',sans-serif;
-
     font-size:17px;
-
     font-weight:700;
-
     text-align:center;
-
     line-height:1.55;
-
-    margin-bottom:8px;
+    margin-bottom:8px
 }
-
 
 .pitch span{
-
-    color:var(--gold);
+    color:var(--gold)
 }
-
-
-/* =====================================================
-   SUB
-   ===================================================== */
 
 .sub{
-
     color:var(--muted);
-
     font-size:13px;
-
     text-align:center;
-
     margin-bottom:20px;
-
-    line-height:1.6;
+    line-height:1.6
 }
 
-
-/* =====================================================
-   URGENCY
-   ===================================================== */
-
 .urgency{
-
-    background:
-        rgba(245,196,81,.08);
-
-    border:
-        1px solid
-        rgba(245,196,81,.22);
-
+    background:rgba(245,196,81,.08);
+    border:1px solid rgba(245,196,81,.22);
     border-radius:50px;
 
     padding:10px 20px;
 
     display:flex;
-
     align-items:center;
-
     gap:8px;
 
     margin-bottom:20px;
 
     font-size:12.5px;
-
     font-weight:600;
-
     color:#ffd98a;
-
-    text-align:center;
+    text-align:center
 }
-
-
-/* =====================================================
-   FEATURES
-   ===================================================== */
 
 .features{
-
     width:100%;
-
     max-width:380px;
-
-    margin-bottom:20px;
+    margin-bottom:20px
 }
 
-
 .feat{
-
     background:var(--surface);
 
     border:1px solid var(--line);
-
     border-radius:14px;
 
     padding:14px 16px;
@@ -693,156 +486,67 @@ body{
     margin-bottom:9px;
 
     display:flex;
-
     align-items:center;
-
-    gap:12px;
+    gap:12px
 }
 
-
 .feat-icon{
-
     width:34px;
-
     height:34px;
 
-    background:
-        rgba(245,196,81,.1);
-
-    border:
-        1px solid
-        rgba(245,196,81,.2);
+    background:rgba(245,196,81,.1);
+    border:1px solid rgba(245,196,81,.2);
 
     border-radius:10px;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     font-size:16px;
-
-    flex-shrink:0;
+    flex-shrink:0
 }
-
 
 .feat-text{
-
     font-size:13.5px;
-
     font-weight:600;
-
-    color:#dfe4ee;
+    color:#dfe4ee
 }
 
-
-/* =====================================================
-   TRUST
-   ===================================================== */
-
 .trust{
-
     display:flex;
-
     align-items:center;
-
     gap:8px;
 
     margin-bottom:20px;
 
     font-size:12px;
-
-    color:var(--muted);
+    color:var(--muted)
 }
-
 
 .trust b{
-
-    color:#7ff0a8;
+    color:#7ff0a8
 }
-
-
-/* =====================================================
-   FREE TAG
-   ===================================================== */
 
 .free-tag{
-
     color:var(--gold);
-
     font-size:12px;
-
     font-weight:600;
-
-    margin-bottom:28px;
+    margin-bottom:28px
 }
 
-
-/* =====================================================
-   DISCLAIMER
-   ===================================================== */
-
 .disc{
-
     max-width:380px;
-
     text-align:center;
 
     color:#5d6478;
 
     font-size:10.5px;
-
     line-height:1.7;
 
     padding-top:20px;
 
-    border-top:1px solid var(--line);
-}
-
-
-/* =====================================================
-   MOBILE
-   ===================================================== */
-
-@media(max-width:480px){
-
-    .container{
-
-        padding:
-            36px
-            14px
-            40px;
-    }
-
-
-    .name{
-
-        font-size:22px;
-    }
-
-
-    .avatar{
-
-        width:110px;
-
-        height:110px;
-    }
-
-
-    .pitch{
-
-        font-size:16px;
-    }
-
-
-    .btn{
-
-        font-size:15px;
-
-        padding:15px;
-    }
-
+    border-top:1px solid var(--line)
 }
 
 </style>
@@ -856,18 +560,11 @@ body{
 <div class="container">
 
 
-    <!-- TOP BAR -->
-
     <div class="top-bar">
-
         <i></i>
-
         5,947 traders online now
-
     </div>
 
-
-    <!-- PROFILE -->
 
     <div class="avatar-wrap">
 
@@ -883,59 +580,38 @@ body{
 
 
         <div class="badge">
-
             ✓
-
         </div>
 
     </div>
 
 
-    <!-- NAME -->
-
     <h1 class="name">
-
-        HAJI MUSSABBIR RAHMAN
-        ( HALAL TRADING) 🕋🕋
-
+        HAJI MUSSABBIR RAHMAN ( HALAL TRADING) 🕋🕋
     </h1>
 
 
-    <!-- TAGLINE -->
-
     <div class="tagline">
-
         🏆 India's No.1 Stock Market Channel
-
     </div>
 
-
-    <!-- RATING -->
 
     <div class="rating">
 
         <span class="stars">
-
             ★★★★★
-
         </span>
 
         <b>
-
             4.9/5
-
         </b>
 
         <small>
-
             (2,340 reviews)
-
         </small>
 
     </div>
 
-
-    <!-- STATS -->
 
     <div class="stats">
 
@@ -943,15 +619,11 @@ body{
         <div class="stat">
 
             <div class="stat-num">
-
                 50K+
-
             </div>
 
             <div class="stat-lbl">
-
                 Members
-
             </div>
 
         </div>
@@ -960,15 +632,11 @@ body{
         <div class="stat">
 
             <div class="stat-num">
-
                 5+ Yrs
-
             </div>
 
             <div class="stat-lbl">
-
                 Experience
-
             </div>
 
         </div>
@@ -977,15 +645,11 @@ body{
         <div class="stat">
 
             <div class="stat-num">
-
                 95%
-
             </div>
 
             <div class="stat-lbl">
-
                 Accuracy
-
             </div>
 
         </div>
@@ -993,46 +657,29 @@ body{
 
     </div>
 
-
-    <!-- PITCH -->
 
     <div class="pitch">
 
         Get
-
-        <span>
-
-            FREE
-
-        </span>
-
-        daily calls for NIFTY,
-        BANKNIFTY &amp; SENSEX
+        <span>FREE</span>
+        daily calls for NIFTY, BANKNIFTY &amp; SENSEX
 
     </div>
 
-
-    <!-- SUBTEXT -->
 
     <div class="sub">
 
-        Join thousands of traders
-        getting free premium analysis daily
+        Join thousands of traders getting free premium analysis daily
 
     </div>
 
-
-    <!-- URGENCY -->
 
     <div class="urgency">
 
-        🔥 7,589 people joined today —
-        Limited FREE access!
+        🔥 7,589 people joined today — Limited FREE access!
 
     </div>
 
-
-    <!-- TELEGRAM BUTTON -->
 
     <a
         class="btn"
@@ -1040,7 +687,6 @@ body{
         href="https://t.me/+bbMnSTA8R204MmNl"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Join Free Telegram Channel"
     >
 
         Join Free Telegram Channel →
@@ -1048,23 +694,17 @@ body{
     </a>
 
 
-    <!-- FEATURES -->
-
     <div class="features">
 
 
         <div class="feat">
 
             <div class="feat-icon">
-
                 📊
-
             </div>
 
             <div class="feat-text">
-
                 Daily Nifty &amp; BankNifty Levels
-
             </div>
 
         </div>
@@ -1073,15 +713,11 @@ body{
         <div class="feat">
 
             <div class="feat-icon">
-
                 🎓
-
             </div>
 
             <div class="feat-text">
-
                 No Paid Tips – Purely Educational
-
             </div>
 
         </div>
@@ -1090,15 +726,11 @@ body{
         <div class="feat">
 
             <div class="feat-icon">
-
                 ⏳
-
             </div>
 
             <div class="feat-text">
-
                 5+ Years of Market Experience
-
             </div>
 
         </div>
@@ -1107,15 +739,11 @@ body{
         <div class="feat">
 
             <div class="feat-icon">
-
                 👥
-
             </div>
 
             <div class="feat-text">
-
                 50,000+ Subscribers Trust Us
-
             </div>
 
         </div>
@@ -1124,22 +752,16 @@ body{
     </div>
 
 
-    <!-- TRUST -->
-
     <div class="trust">
 
         <b>
-
             ✅ Verified Channel
-
         </b>
 
         • Free Forever • No Spam
 
     </div>
 
-
-    <!-- FREE -->
 
     <div class="free-tag">
 
@@ -1148,16 +770,9 @@ body{
     </div>
 
 
-    <!-- DISCLAIMER -->
-
     <div class="disc">
 
-        Disclaimer: This channel is for educational and
-        informational purposes only. We do not provide
-        investment advice or guaranteed returns. Trading
-        in the stock market involves risk. Please consult
-        your financial advisor before making any investment
-        decisions.
+        Disclaimer: This channel is for educational and informational purposes only. We do not provide investment advice or guaranteed returns. Trading in the stock market involves risk. Please consult your financial advisor before making any investment decisions.
 
     </div>
 
@@ -1167,20 +782,19 @@ body{
 
 
 <!-- =====================================================
-     TELEGRAM CTA + SUBSCRIBE EVENT
+     SUBSCRIBE EVENT
      ===================================================== -->
 
 <script>
 
 (function(){
 
-
     const telegramBtn =
         document.getElementById("telegramBtn");
 
 
     const SUBSCRIBE_SESSION_KEY =
-        "telegram_subscribe_sent_v1";
+        "telegram_subscribe_sent_v4";
 
 
     const CLICK_LOCK_TIME =
@@ -1190,9 +804,10 @@ body{
     let clickLocked = false;
 
 
-    /* =================================================
-       CREATE EVENT ID
-       ================================================= */
+
+    /* =========================================
+       CREATE UNIQUE EVENT ID
+       ========================================= */
 
     function createEventId(){
 
@@ -1208,9 +823,10 @@ body{
     }
 
 
-    /* =================================================
-       CHECK DUPLICATE EVENT
-       ================================================= */
+
+    /* =========================================
+       CHECK SESSION DUPLICATE
+       ========================================= */
 
     function hasSubscribeBeenSent(){
 
@@ -1231,9 +847,10 @@ body{
     }
 
 
-    /* =================================================
-       MARK EVENT
-       ================================================= */
+
+    /* =========================================
+       MARK EVENT AS SENT
+       ========================================= */
 
     function markSubscribeSent(){
 
@@ -1253,32 +870,35 @@ body{
     }
 
 
-    /* =================================================
+
+    /* =========================================
        SEND SUBSCRIBE
-       ================================================= */
+       ========================================= */
 
     function sendSubscribeEvent(){
 
-
         /*
-         * Prevent duplicate Subscribe events
-         * during the same browser session.
+         * Same browser session mein
+         * duplicate Subscribe nahi bhejna.
          */
 
         if(hasSubscribeBeenSent()){
+
+            console.log(
+                "Subscribe already sent in this session."
+            );
 
             return;
 
         }
 
 
+
         /*
-         * Make sure Meta Pixel is loaded.
+         * Meta Pixel available hai?
          */
 
-        if(
-            typeof window.fbq !== "function"
-        ){
+        if(typeof window.fbq !== "function"){
 
             console.warn(
                 "Meta Pixel is not available."
@@ -1289,22 +909,20 @@ body{
         }
 
 
+
         const eventId =
             createEventId();
 
 
+
         /*
-         * Subscribe event.
-         *
-         * This is fired when the user
-         * interacts with the Telegram CTA.
+         * Subscribe Event
          */
 
         fbq(
             "track",
             "Subscribe",
             {
-
                 content_name:
                     "Telegram Join",
 
@@ -1314,24 +932,21 @@ body{
                 value:1,
 
                 currency:"INR"
-
             },
-
             {
-
                 eventID:eventId
-
             }
-
         );
 
 
+
         /*
-         * Prevent another Subscribe event
-         * in the same browser session.
+         * Event sent hone ke baad
+         * session mein mark karein.
          */
 
         markSubscribeSent();
+
 
 
         console.log(
@@ -1342,22 +957,20 @@ body{
     }
 
 
-    /* =================================================
+
+    /* =========================================
        TELEGRAM BUTTON
-       ================================================= */
+       ========================================= */
 
     if(telegramBtn){
 
-
         telegramBtn.addEventListener(
-
             "click",
-
             function(event){
 
 
                 /*
-                 * Prevent rapid double-clicks.
+                 * Rapid / double click protection
                  */
 
                 if(clickLocked){
@@ -1372,25 +985,29 @@ body{
                 clickLocked = true;
 
 
+
+                /*
+                 * Temporary visual feedback
+                 */
+
                 telegramBtn.style.opacity =
                     "0.75";
 
 
+
                 /*
-                 * Fire Subscribe event
-                 * before Telegram navigation.
+                 * Fire Subscribe
                  */
 
                 sendSubscribeEvent();
 
 
+
                 /*
-                 * Restore button after
-                 * protection period.
+                 * Unlock after 1.5 sec
                  */
 
                 setTimeout(
-
                     function(){
 
                         clickLocked = false;
@@ -1399,21 +1016,16 @@ body{
                             "";
 
                     },
-
                     CLICK_LOCK_TIME
-
                 );
 
             },
-
             {
                 passive:false
             }
-
         );
 
     }
-
 
 })();
 
