@@ -1,13 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ===================== CONFIG ===================== -->
 <title>SALMAN MEMON TRADER</title>
-
 <meta name="description" content="Free daily Nifty & BankNifty levels, market analysis and stock market education.">
 <meta name="keywords" content="Nifty Prediction, BankNifty Analysis, Stock Market India, Free Trading Calls">
 
@@ -24,10 +23,9 @@
 href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
 rel="stylesheet">
 
-
 <!-- =====================================================
      META PIXEL
-     PIXEL ID: 28439071169049662
+     PIXEL ID: 1773199607163905
      INSTALLED ONCE ONLY
      ===================================================== -->
 
@@ -60,51 +58,48 @@ rel="stylesheet">
 (window, document, 'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-
-/* ONLY ONE PIXEL INITIALIZATION */
-fbq('init', '28439071169049662');
+/* ONLY ONE PIXEL */
+fbq('init', '1773199607163905');
 
 /* ONLY ONE PAGEVIEW */
 fbq('track', 'PageView');
 
 </script>
 
-
 <noscript>
 <img
 height="1"
 width="1"
 style="display:none"
-src="https://www.facebook.com/tr?id=28439071169049662&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1773199607163905&ev=PageView&noscript=1"
 />
 </noscript>
 
 <!-- ================= END META PIXEL ================= -->
-
 
 <style>
 
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box
+    box-sizing:border-box;
 }
 
 :root{
-  --bg:#07080d;
-  --surface:#10131c;
-  --surface-2:#161a26;
-  --line:rgba(255,255,255,.08);
-  --text:#f2f4f8;
-  --muted:#8b93a7;
-  --gold:#f5c451;
-  --gold-2:#c9922c;
-  --green:#25d366;
+    --bg:#07080d;
+    --surface:#10131c;
+    --surface-2:#161a26;
+    --line:rgba(255,255,255,.08);
+    --text:#f2f4f8;
+    --muted:#8b93a7;
+    --gold:#f5c451;
+    --gold-2:#c9922c;
+    --green:#25d366;
 }
 
 html,
 body{
-    background:var(--bg)
+    background:var(--bg);
 }
 
 body{
@@ -129,9 +124,8 @@ body{
 
         var(--bg);
 
-    -webkit-font-smoothing:antialiased
+    -webkit-font-smoothing:antialiased;
 }
-
 
 .container{
     max-width:460px;
@@ -140,9 +134,8 @@ body{
 
     display:flex;
     flex-direction:column;
-    align-items:center
+    align-items:center;
 }
-
 
 .top-bar{
     background:rgba(37,211,102,.1);
@@ -162,9 +155,8 @@ body{
     align-items:center;
     gap:8px;
 
-    letter-spacing:.2px
+    letter-spacing:.2px;
 }
-
 
 .top-bar i{
     width:8px;
@@ -176,21 +168,18 @@ body{
 
     animation:blink 1.2s infinite;
 
-    box-shadow:0 0 10px var(--green)
+    box-shadow:0 0 10px var(--green);
 }
-
 
 @keyframes blink{
     0%,100%{opacity:1}
     50%{opacity:.25}
 }
 
-
 .avatar-wrap{
     position:relative;
-    margin-bottom:6px
+    margin-bottom:6px;
 }
-
 
 .avatar{
     width:122px;
@@ -217,16 +206,14 @@ body{
     align-items:center;
     justify-content:center;
 
-    overflow:hidden
+    overflow:hidden;
 }
-
 
 .avatar img{
     width:100%;
     height:100%;
-    object-fit:cover
+    object-fit:cover;
 }
-
 
 .badge{
     position:absolute;
@@ -257,9 +244,8 @@ body{
     font-size:13px;
     font-weight:800;
 
-    z-index:2
+    z-index:2;
 }
-
 
 .name{
     font-family:'Sora',sans-serif;
@@ -283,9 +269,8 @@ body{
     -webkit-background-clip:text;
     background-clip:text;
 
-    color:transparent
+    color:transparent;
 }
-
 
 .tagline{
     color:var(--gold);
@@ -295,9 +280,8 @@ body{
 
     margin-bottom:8px;
 
-    letter-spacing:.3px
+    letter-spacing:.3px;
 }
-
 
 .rating{
     display:flex;
@@ -308,19 +292,18 @@ body{
     margin-bottom:22px;
 
     font-size:13px;
-    color:#cfd5e3
-}
 
+    color:#cfd5e3;
+}
 
 .rating .stars{
     color:var(--gold);
-    letter-spacing:2px
+    letter-spacing:2px;
 }
-
 
 .rating small{
     color:var(--muted);
-    font-size:12px
+    font-size:12px;
 }
 
 
@@ -353,7 +336,6 @@ body{
     border-radius:16px;
 
     text-align:center;
-
     text-decoration:none;
 
     margin-bottom:22px;
@@ -366,24 +348,20 @@ body{
         box-shadow .15s;
 
     position:relative;
-    overflow:hidden
+    overflow:hidden;
 }
-
 
 .btn:hover{
     transform:translateY(-2px);
 
     box-shadow:
-        0 14px 34px rgba(245,196,81,.32)
+        0 14px 34px rgba(245,196,81,.32);
 }
 
-
-/* Prevent visual interaction while processing */
 .btn.processing{
     opacity:.65;
     pointer-events:none;
 }
-
 
 .btn::after{
     content:"";
@@ -404,15 +382,13 @@ body{
             transparent
         );
 
-    animation:shine 3.2s infinite
+    animation:shine 3.2s infinite;
 }
-
 
 @keyframes shine{
     0%{left:-60%}
     55%,100%{left:130%}
 }
-
 
 .btn2{
     display:block;
@@ -436,22 +412,19 @@ body{
     border-radius:16px;
 
     text-align:center;
-
     text-decoration:none;
 
     margin-bottom:8px;
 
     transition:
         border-color .2s,
-        background .2s
+        background .2s;
 }
-
 
 .btn2:hover{
     background:#1c2130;
-    border-color:rgba(245,196,81,.4)
+    border-color:rgba(245,196,81,.4);
 }
-
 
 .stats{
     display:flex;
@@ -461,9 +434,8 @@ body{
     margin-bottom:28px;
 
     width:100%;
-    max-width:380px
+    max-width:380px;
 }
-
 
 .stat{
     flex:1;
@@ -481,9 +453,8 @@ body{
 
     padding:15px 8px;
 
-    text-align:center
+    text-align:center;
 }
-
 
 .stat-num{
     font-family:'Sora',sans-serif;
@@ -491,9 +462,8 @@ body{
     font-size:19px;
     font-weight:800;
 
-    color:var(--gold)
+    color:var(--gold);
 }
-
 
 .stat-lbl{
     font-size:11px;
@@ -502,9 +472,8 @@ body{
 
     margin-top:3px;
 
-    letter-spacing:.3px
+    letter-spacing:.3px;
 }
-
 
 .pitch{
     font-family:'Sora',sans-serif;
@@ -516,14 +485,12 @@ body{
 
     line-height:1.55;
 
-    margin-bottom:8px
+    margin-bottom:8px;
 }
-
 
 .pitch span{
-    color:var(--gold)
+    color:var(--gold);
 }
-
 
 .sub{
     color:var(--muted);
@@ -534,9 +501,8 @@ body{
 
     margin-bottom:20px;
 
-    line-height:1.6
+    line-height:1.6;
 }
-
 
 .urgency{
     background:rgba(245,196,81,.08);
@@ -548,7 +514,6 @@ body{
     padding:10px 20px;
 
     display:flex;
-
     align-items:center;
 
     gap:8px;
@@ -556,22 +521,19 @@ body{
     margin-bottom:20px;
 
     font-size:12.5px;
-
     font-weight:600;
 
     color:#ffd98a;
 
-    text-align:center
+    text-align:center;
 }
-
 
 .features{
     width:100%;
     max-width:380px;
 
-    margin-bottom:20px
+    margin-bottom:20px;
 }
-
 
 .feat{
     background:var(--surface);
@@ -585,12 +547,10 @@ body{
     margin-bottom:9px;
 
     display:flex;
-
     align-items:center;
 
-    gap:12px
+    gap:12px;
 }
-
 
 .feat-icon{
     width:34px;
@@ -603,28 +563,23 @@ body{
     border-radius:10px;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 
     font-size:16px;
 
-    flex-shrink:0
+    flex-shrink:0;
 }
-
 
 .feat-text{
     font-size:13.5px;
-
     font-weight:600;
 
-    color:#dfe4ee
+    color:#dfe4ee;
 }
-
 
 .trust{
     display:flex;
-
     align-items:center;
 
     gap:8px;
@@ -633,25 +588,21 @@ body{
 
     font-size:12px;
 
-    color:var(--muted)
+    color:var(--muted);
 }
-
 
 .trust b{
-    color:#7ff0a8
+    color:#7ff0a8;
 }
-
 
 .free-tag{
     color:var(--gold);
 
     font-size:12px;
-
     font-weight:600;
 
-    margin-bottom:28px
+    margin-bottom:28px;
 }
-
 
 .disc{
     max-width:380px;
@@ -666,20 +617,18 @@ body{
 
     padding-top:20px;
 
-    border-top:1px solid var(--line)
+    border-top:1px solid var(--line);
 }
 
 </style>
 
 </head>
 
-
 <body>
-
 
 <div class="container">
 
-
+```
 <div class="top-bar">
     <i></i>
     5,947 traders online now
@@ -728,7 +677,8 @@ body{
 </div>
 
 
-<!-- TELEGRAM BUTTON 1 -->
+<!-- TELEGRAM BUTTON 1
+     NO SUBSCRIBE EVENT -->
 
 <a
     class="btn telegram-btn"
@@ -774,7 +724,8 @@ body{
 </div>
 
 
-<!-- TELEGRAM BUTTON 2 -->
+<!-- TELEGRAM BUTTON 2
+     ONLY THIS BUTTON FIRES SUBSCRIBE -->
 
 <a
     class="btn telegram-btn"
@@ -786,7 +737,6 @@ body{
 
 
 <div class="features">
-
 
     <div class="feat">
         <div class="feat-icon">📊</div>
@@ -819,7 +769,6 @@ body{
         </div>
     </div>
 
-
 </div>
 
 
@@ -829,7 +778,8 @@ body{
 </div>
 
 
-<!-- TELEGRAM BUTTON 3 -->
+<!-- TELEGRAM BUTTON 3
+     NO SUBSCRIBE EVENT -->
 
 <a
     class="btn2 telegram-btn"
@@ -855,18 +805,20 @@ body{
     before making any investment decisions.
 
 </div>
-
+```
 
 </div>
-
 
 <!-- =====================================================
      TELEGRAM + META SUBSCRIBE TRACKING
 
-     IMPORTANT:
-     Subscribe is fired ONLY after a real user click.
-     Duplicate/rapid clicks are blocked.
-     No automatic Subscribe event.
+     BUTTON 1 = NO SUBSCRIBE
+     BUTTON 2 = SUBSCRIBE
+     BUTTON 3 = NO SUBSCRIBE
+
+     Subscribe fires ONLY when:
+     data-button-location="middle"
+
      ===================================================== -->
 
 <script>
@@ -876,53 +828,69 @@ body{
     "use strict";
 
 
-    /* ==========================================
-       CONFIG
-       ========================================== */
-
     const TELEGRAM_LINK =
         "https://t.me/+DHDvunATnMxmYTk1";
 
-    const PIXEL_EVENT =
-        "Subscribe";
+
+    const buttons =
+        document.querySelectorAll(".telegram-btn");
 
 
-    /* ==========================================
-       GENERATE UNIQUE EVENT ID
-       ========================================== */
+    /* ONLY BUTTON 2 CAN FIRE SUBSCRIBE */
+
+    const subscribeButton =
+        document.querySelector(
+            '.telegram-btn[data-button-location="middle"]'
+        );
+
+
+    let clickLocked = false;
+
+
+    /* =========================
+       UNIQUE EVENT ID
+       ========================= */
 
     function createEventId(){
 
-        return "telegram_subscribe_" +
+        return (
+            "telegram_subscribe_" +
             Date.now() +
             "_" +
             Math.random()
                 .toString(36)
-                .substring(2,10);
+                .substring(2,10)
+        );
 
     }
 
 
-    /* ==========================================
-       TRACK SUBSCRIBE
-       ========================================== */
+    /* =========================
+       SUBSCRIBE EVENT
 
-    function trackSubscribe(buttonLocation){
+       ONLY BUTTON 2
+       ========================= */
 
-        if(typeof window.fbq !== "function"){
+    function trackSubscribe(){
 
-            return null;
+        if(
+            !subscribeButton ||
+            typeof window.fbq !== "function"
+        ){
 
+            return;
         }
 
 
-        const eventId = createEventId();
+        const eventId =
+            createEventId();
 
 
         window.fbq(
             "track",
-            PIXEL_EVENT,
+            "Subscribe",
             {
+
                 content_name:
                     "Haji Salman Memon Telegram Community",
 
@@ -930,40 +898,32 @@ body{
                     "Telegram",
 
                 button_location:
-                    buttonLocation
+                    "middle"
+
             },
             {
+
                 eventID:
                     eventId
+
             }
         );
-
-
-        return eventId;
 
     }
 
 
-    /* ==========================================
+    /* =========================
        ALL TELEGRAM BUTTONS
-       ========================================== */
-
-    const buttons =
-        document.querySelectorAll(".telegram-btn");
-
-
-    let clickLocked = false;
-
+       ========================= */
 
     buttons.forEach(function(button){
-
 
         button.addEventListener(
             "click",
             function(event){
 
                 /*
-                 Prevent duplicate clicks.
+                 * Block rapid duplicate clicks.
                  */
 
                 if(clickLocked){
@@ -971,7 +931,6 @@ body{
                     event.preventDefault();
 
                     return;
-
                 }
 
 
@@ -979,47 +938,60 @@ body{
 
 
                 /*
-                 Stop default navigation temporarily
-                 so Pixel has a moment to send request.
+                 * Stop navigation temporarily
+                 * so Pixel request can start.
                  */
 
                 event.preventDefault();
 
 
                 /*
-                 Disable all Telegram buttons.
+                 * Disable all buttons
+                 * while processing.
                  */
 
                 buttons.forEach(function(btn){
 
-                    btn.classList.add("processing");
+                    btn.classList.add(
+                        "processing"
+                    );
 
                 });
 
 
-                const location =
-                    button.getAttribute(
-                        "data-button-location"
-                    ) || "telegram_cta";
+                /*
+                 * IMPORTANT:
+                 *
+                 * Subscribe is fired ONLY when
+                 * the clicked button is BUTTON 2.
+                 *
+                 * Button 1 -> NO Subscribe
+                 * Button 2 -> Subscribe
+                 * Button 3 -> NO Subscribe
+                 */
+
+                if(
+                    button === subscribeButton
+                ){
+
+                    trackSubscribe();
+
+                }
 
 
                 /*
-                 Send Subscribe event.
+                 * Redirect to Telegram.
                  */
 
-                trackSubscribe(location);
+                setTimeout(
+                    function(){
 
+                        window.location.href =
+                            TELEGRAM_LINK;
 
-                /*
-                 Redirect to Telegram.
-                 */
-
-                setTimeout(function(){
-
-                    window.location.href =
-                        TELEGRAM_LINK;
-
-                }, 700);
+                    },
+                    700
+                );
 
             },
             {
@@ -1033,7 +1005,6 @@ body{
 })();
 
 </script>
-
 
 </body>
 </html>
