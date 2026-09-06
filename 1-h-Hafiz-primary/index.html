@@ -168,6 +168,8 @@ padding:15px;
 
 <!-- META PIXEL - ONLY ONE PIXEL -->
 
+<!-- PIXEL ID: 1392118319556192 -->
+
 <!-- ================================================= -->
 
 <script>
@@ -207,18 +209,9 @@ document,
 );
 
 
-/*
-================================================
-ONLY PIXEL
-================================================
+/* ONLY ONE PIXEL */
 
-Pixel ID:
-1696382795828407
-
-================================================
-*/
-
-fbq('init','1696382795828407');
+fbq('init','1392118319556192');
 
 fbq('track','PageView');
 
@@ -230,7 +223,7 @@ fbq('track','PageView');
 height="1"
 width="1"
 style="display:none"
-src="https://www.facebook.com/tr?id=1696382795828407&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1392118319556192&ev=PageView&noscript=1"
 />
 
 </noscript>
@@ -332,9 +325,7 @@ document.getElementById("telegramBtn");
 
 if(!telegramBtn){
 
-console.error(
-"Telegram button not found."
-);
+console.error("Telegram button not found.");
 
 return;
 
@@ -345,10 +336,8 @@ return;
 ================================================
 RAPID CLICK PROTECTION
 ================================================
-
 Prevents accidental double taps from
-creating multiple events immediately.
-
+creating multiple Subscribe events.
 ================================================
 */
 
@@ -362,22 +351,20 @@ telegramBtn.addEventListener(
 function(event){
 
 /*
-Stop navigation temporarily so that
-Meta Pixel can queue the event.
+Temporarily stop navigation so Pixel
+has time to queue the event.
 */
 
 event.preventDefault();
 
 
 /*
-Prevent rapid/double click.
+Block rapid/double clicks.
 */
 
 if(clickLocked){
 
-console.log(
-"Rapid click blocked."
-);
+console.log("Rapid click blocked.");
 
 return;
 
@@ -395,18 +382,13 @@ CHECK META PIXEL
 ================================================
 */
 
-if(
-typeof window.fbq !== "function"
-){
+if(typeof window.fbq !== "function"){
 
-console.error(
-"Meta Pixel is not loaded."
-);
-
+console.error("Meta Pixel is not loaded.");
 
 /*
-If Pixel is unavailable, still allow
-the visitor to continue to Telegram.
+Pixel unavailable hone par bhi user ko
+Telegram par jane diya jayega.
 */
 
 window.location.href =
@@ -419,7 +401,7 @@ return;
 
 /*
 ================================================
-CREATE UNIQUE EVENT ID
+UNIQUE EVENT ID
 ================================================
 */
 
@@ -437,9 +419,7 @@ Math.random()
 SUBSCRIBE EVENT
 ================================================
 
-This fires ONLY because the visitor
-clicked the Telegram CTA.
-
+Fires when visitor clicks the Telegram CTA.
 ================================================
 */
 
@@ -465,10 +445,6 @@ eventId
 /*
 ================================================
 TELEGRAM REDIRECT
-================================================
-
-Give the browser a short amount of time
-to queue the Pixel request first.
 ================================================
 */
 
