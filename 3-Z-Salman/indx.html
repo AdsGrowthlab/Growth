@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>Haji Salman Memon Trader — Stock Market Education Community</title>
+<meta name="description" content="Join a free Telegram community for stock market education, daily learning, and practical market concepts. Beginner friendly.">
+<meta property="og:title" content="Haji Salman Memon Trader — Stock Market Education">
+<meta property="og:description" content="Join a free Telegram community for stock market education, daily learning, and practical market concepts.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Haji Salman Memon Trader">
+
+<!-- Google Fonts: Inter + Sora -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap">
+
+<!-- =====================================================
+     META PIXEL
+     ONE PIXEL · ONE INITIALIZATION · ONE PAGEVIEW
+     Pixel ID: 1391095086544503
+     ===================================================== -->
+<script>
+!function(f,b,e,v,n,t,s){
+    if(f.fbq)return;
+    n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+    };
+    if(!f._fbq)f._fbq=n;
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+}
+(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1391095086544503');
+fbq('track','PageView');
+</script>
+
+<noscript>
+<img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=1391095086544503&ev=PageView&noscript=1"
+    alt=""
+>
+</noscript>
+<!-- ================= END META PIXEL ================= -->
+
+<style>
+  /* ===== Design tokens ===== */
+  :root{
+    --ink:#0a1512;
+    --cream:#fbfdfc;
+    --brand:#0b3d2e;
+    --brand-soft:#12563f;
+    --gold:#e0b859;
+    --gold-soft:#f3e6c2;
+    --telegram:#249bdc;
+    --mist:#56645d;
+  }
+
+  *{box-sizing:border-box}
+
+  html,body{margin:0;padding:0}
+
+  body{
+    background:radial-gradient(130% 120% at 50% -10%, var(--brand-soft) 0%, var(--ink) 55%, #061009 100%);
+    color:var(--cream);
+    font-family:"Inter",ui-sans-serif,system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+  }
+
+  .page-wrap{
+    display:flex;
+    justify-content:center;
+    padding:28px 12px;
+    min-height:100vh;
+  }
+
+  .container{
+    width:100%;
+    max-width:380px;
+    position:relative;
+  }
+
+  /* Glow orbs */
+  .glow-1{
+    position:absolute;
+    top:-64px;
+    left:50%;
+    transform:translateX(-50%);
+    width:240px;
+    height:240px;
+    border-radius:9999px;
+    background:rgba(224,184,89,.20);
+    filter:blur(70px);
+    pointer-events:none;
+  }
+  .glow-2{
+    position:absolute;
+    top:176px;
+    right:-48px;
+    width:208px;
+    height:208px;
+    border-radius:9999px;
+    background:rgba(36,155,220,.15);
+    filter:blur(70px);
+    pointer-events:none;
+  }
+
+  /* ===== Card ===== */
+  .card{
+    position:relative;
+    border-radius:28px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.10);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    box-shadow:0 30px 80px -24px rgba(0,0,0,.7);
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .panel{
+    border-radius:22px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.10);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    padding:20px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+
+  /* ===== Header ===== */
+  .header-panel::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom, rgba(255,255,255,.10), transparent);
+    pointer-events:none;
+  }
+  .header-inner{position:relative}
+
+  .avatar-ring{
+    width:96px;
+    height:96px;
+    margin:0 auto 12px;
+    border-radius:9999px;
+    padding:2.5px;
+    background:linear-gradient(135deg, var(--gold), var(--gold-soft), var(--gold));
+    position:relative;
+  }
+  .avatar-ring img{
+    width:100%;
+    height:100%;
+    border-radius:9999px;
+    object-fit:cover;
+    background:var(--brand-soft);
+    display:block;
+  }
+
+  .badge{
+    display:inline-block;
+    border-radius:9999px;
+    border:1px solid rgba(224,184,89,.40);
+    background:rgba(224,184,89,.10);
+    padding:4px 12px;
+    font-size:9px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    color:var(--gold-soft);
+  }
+
+  h1{
+    margin:12px 0 0;
+    font-family:"Sora","Inter",sans-serif;
+    font-size:22px;
+    line-height:1.2;
+    font-weight:800;
+  }
+
+  .subtitle{
+    margin:4px 0 0;
+    font-size:10px;
+    color:rgba(255,255,255,.50);
+  }
+
+  .divider{
+    margin:16px auto 0;
+    height:3px;
+    width:48px;
+    border-radius:9999px;
+    background:linear-gradient(to right, transparent, var(--gold), transparent);
+  }
+
+  /* ===== Content ===== */
+  .content-panel{padding:16px}
+  .content-text{
+    text-align:center;
+    font-size:11.5px;
+    line-height:1.6;
+    color:rgba(255,255,255,.65);
+    margin:0;
+  }
+
+  .feature-grid{
+    margin-top:16px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+  .feature{
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.05);
+    padding:12px;
+    text-align:left;
+  }
+  .feature .icon{font-size:15px}
+  .feature b{
+    display:block;
+    margin-top:6px;
+    font-size:11px;
+    font-weight:700;
+    color:var(--cream);
+  }
+  .feature span{
+    display:block;
+    margin-top:2px;
+    font-size:9px;
+    color:rgba(255,255,255,.45);
+  }
+
+  /* ===== CTA ===== */
+  .cta-panel{
+    border:1px solid rgba(36,155,220,.30);
+    background:linear-gradient(135deg, rgba(36,155,220,.25), rgba(36,155,220,.05));
+    box-shadow:0 18px 45px -18px rgba(36,155,220,.6);
+    padding:16px;
+  }
+  .cta-btn{
+    display:block;
+    border-radius:16px;
+    background:var(--telegram);
+    padding:14px 16px;
+    color:var(--cream);
+    text-decoration:none;
+    box-shadow:0 12px 30px -8px rgba(36,155,220,.7);
+    transition:transform .1s ease;
+  }
+  .cta-btn:active{transform:scale(.98)}
+  .cta-btn .cta-title{
+    display:block;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:-.01em;
+  }
+  .cta-btn .cta-sub{
+    display:block;
+    margin-top:2px;
+    font-size:9px;
+    color:rgba(255,255,255,.85);
+  }
+  .cta-lock{
+    margin-top:10px;
+    font-size:8.5px;
+    color:rgba(255,255,255,.55);
+  }
+
+  /* ===== Disclaimer ===== */
+  .disclaimer{
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.03);
+    padding:16px;
+    text-align:center;
+  }
+  .disclaimer p{
+    margin:0;
+    font-size:8px;
+    line-height:1.6;
+    color:rgba(255,255,255,.40);
+  }
+
+  /* ===== Footer ===== */
+  .footer{
+    margin-top:16px;
+    text-align:center;
+    font-size:9px;
+    letter-spacing:.05em;
+    color:rgba(255,255,255,.30);
+  }
+</style>
+</head>
+<body>
+
+<div class="page-wrap">
+  <div class="container">
+
+    <!-- Glow orbs -->
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+
+    <!-- Main card -->
+    <div class="card">
+
+      <!-- Header -->
+      <div class="panel header-panel">
+        <div class="header-inner">
+          <div class="avatar-ring">
+            <!-- Replace with your real photo -->
+            <img src="https://github.com/AdsGrowthlab/h/releases/download/h/Salman.jpeg
+" alt="Haji Salman Memon Trader">
+          </div>
+          <span class="badge">Stock Market Education</span>
+          <h1>Haji Salman Memon Trader</h1>
+          <p class="subtitle">Stock Market Education Community</p>
+          <div class="divider"></div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="panel content-panel">
+        <p class="content-text">
+          Learn about the stock market through a simple educational
+          community focused on market understanding, daily learning and
+          practical concepts.
+        </p>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="icon">📘</div>
+            <b>Education</b>
+            <span>Market concepts</span>
+          </div>
+          <div class="feature">
+            <div class="icon">📊</div>
+            <b>Daily Learning</b>
+            <span>Market updates</span>
+          </div>
+          <div class="feature">
+            <div class="icon">🎓</div>
+            <b>Beginner Friendly</b>
+            <span>Easy to understand</span>
+          </div>
+          <div class="feature">
+            <div class="icon">👥</div>
+            <b>Community</b>
+            <span>Learn together</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="panel cta-panel">
+        <!-- Replace https://t.me/ with your real Telegram community link -->
+        <a href="https://t.me/+s9tvTecUwHc2NTBl" class="cta-btn">
+          <span class="cta-title">JOIN FREE TELEGRAM COMMUNITY</span>
+          <span class="cta-sub">Free educational access</span>
+        </a>
+        <p class="cta-lock">🔒 Secure community access</p>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="panel disclaimer">
+        <p>
+          Educational and informational purposes only. This page does not
+          provide investment advice or guarantee returns. Stock market
+          investments involve risk. Please conduct your own research and
+          consult a qualified financial professional before making
+          investment decisions.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">© 2026 Haji Salman Memon Trader</p>
+
+  </div>
+</div>
+
+</body>
+</html>
