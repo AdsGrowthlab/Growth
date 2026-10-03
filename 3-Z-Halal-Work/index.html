@@ -1,151 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade With Vikas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
 
-<title>Halal Stock Market Education</title>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 15px;
+    }
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+    /* Main Neon Card Container */
+    .card-container {
+      width: 100%;
+      max-width: 400px;
+      background-color: #050b14;
+      border: 1.5px solid #00a2ff;
+      border-radius: 28px;
+      padding: 30px 20px 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 162, 255, 0.2);
+    }
 
-body{
-background:linear-gradient(180deg,#0b4228,#052015);
-color:#fff;
-overflow-x:hidden;
--webkit-text-size-adjust:100%;
-}
+    /* Profile Image with Cyan Glow */
+    .profile-wrapper {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+    }
 
-.container{
-max-width:430px;
-margin:auto;
-padding:12px;
-min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-}
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00d2ff;
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    }
 
-.card{
-width:100%;
-background:rgba(255,255,255,.06);
-border:1px solid rgba(212,175,55,.20);
-border-radius:22px;
-padding:22px 18px;
-text-align:center;
-backdrop-filter:blur(10px);
-box-shadow:0 0 35px rgba(212,175,55,.12);
-}
+    /* Title */
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
 
-.logo{
-width:90px;
-height:90px;
-border-radius:50%;
-overflow:hidden;
-margin:auto;
-border:3px solid #d4af37;
-box-shadow:0 0 20px rgba(212,175,55,.35);
-}
+    /* List Items */
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 25px;
+      text-align: left;
+    }
 
-.logo img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 10px;
+      font-size: 14px;
+      color: #e0e6ed;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-.badge{
-display:inline-block;
-margin-top:14px;
-background:#d4af37;
-color:#08351f;
-padding:7px 15px;
-border-radius:50px;
-font-size:12px;
-font-weight:700;
-}
+    .feature-item:last-child {
+      border-bottom: none;
+    }
 
-h1{
-font-size:24px;
-margin-top:15px;
-line-height:1.3;
-color:#d4af37;
-font-weight:800;
-}
+    .icon {
+      font-size: 18px;
+    }
 
-.desc{
-margin-top:14px;
-font-size:15px;
-line-height:1.6;
-color:#f2f2f2;
-}
+    /* Subtitle Text */
+    .subtext {
+      font-size: 13px;
+      color: #a0aec0;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
 
-.highlight{
-color:#d4af37;
-font-weight:bold;
-}
+    /* Gradient Join Button */
+    .btn-telegram {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(90deg, #00c6ff 0%, #a100ff 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      border-radius: 30px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
+    }
 
-.cta-btn{
-margin-top:18px;
-width:100%;
-display:inline-block;
-text-decoration:none;
-background:linear-gradient(90deg,#d4af37,#f3d26a);
-color:#08351f;
-padding:16px;
-font-size:18px;
-font-weight:800;
-border-radius:60px;
-box-shadow:0 10px 25px rgba(212,175,55,.30);
-transition:.3s;
-}
+    .btn-telegram:active {
+      transform: scale(0.98);
+    }
 
-.cta-btn:hover{
-transform:scale(1.02);
-}
+    /* Hindi Quote */
+    .quote-text {
+      font-size: 14px;
+      color: #cbd5e0;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
 
-.note{
-margin-top:14px;
-font-size:12px;
-line-height:1.6;
-color:#ddd;
-}
+    /* Agency Badge */
+    .agency-badge {
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background-color: rgba(255, 255, 255, 0.02);
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 12px;
+      color: #a0aec0;
+      margin-bottom: 20px;
+    }
 
-.footer{
-margin-top:15px;
-font-size:11px;
-color:#bbb;
-}
+    .agency-badge span {
+      color: #00a2ff;
+      font-weight: 700;
+    }
 
-@media(max-width:480px){
+    /* Disclaimer Links & Text */
+    .footer-links {
+      font-size: 11px;
+      color: #718096;
+      margin-bottom: 6px;
+    }
 
-.card{
-padding:18px 15px;
-}
+    .footer-links a {
+      color: #718096;
+      text-decoration: none;
+    }
 
-.logo{
-width:80px;
-height:80px;
-}
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
 
-h1{
-font-size:22px;
-}
-
-.desc{
-font-size:14px;
-}
-
-.cta-btn{
-font-size:17px;
-padding:15px;
-}
-}
-</style>
+    .disclaimer {
+      font-size: 10px;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -164,27 +182,18 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1100903442590236&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-</head>
 
-<body>
+  <div class="card-container">
+    
+    <!-- Profile Image -->
+    <div class="profile-wrapper">
+      <img src="https://github.com/AdsGrowthlab/Hafiz-india/releases/download/ind/OFFICIAL.HAFIZ.SHAKIL.INDIA.HALAL.WORK.jpg" alt="Trade With Gautam Jha" class="profile-img">
+    </div>
 
-<div class="container">
-
-<div class="card">
-
-<div class="logo">
-<img
-src="https://github.com/AdsGrowthlab/Hafiz-india/releases/download/ind/OFFICIAL.HAFIZ.SHAKIL.INDIA.HALAL.WORK.jpg"
-alt="Logo"
->
-</div>
-
-<div class="badge">
-📚 100% Educational Purpose
-</div>
-
-<h1>SHARIAH TRADER INDIA </h1>
+    <!-- Title -->
+    <h1>SHARIAH TRADER </h1>
 <h1> (HALAL WORK)</h1>
+
 
 <p class="desc">
 <b>Assalamu Alaikum 🤍</b>
@@ -196,107 +205,57 @@ ko
 <span class="highlight">Islamic & Halal Perspective</span>
 se seekhna chahte hain to hamare free educational community ko join karein.
 
-<br><br>
+    <!-- Features List -->
+    <div class="feature-list">
+      <div class="feature-item">
+        <span class="icon">🌐</span>
+        <span>Learning & Educational Sessions</span>
+      </div>
+      <div class="feature-item">
+        <span class="icon">📊</span>
+        <span>Market Concepts & Awareness</span>
+      </div>
+      <div class="feature-item">
+        <span class="icon">💎</span>
+        <span>Chart Reading Concepts</span>
+      </div>
+      <div class="feature-item">
+        <span class="icon">💻</span>
+        <span>Educational Case Discussions</span>
+      </div>
+    </div>
 
-Yahan aapko
-<span class="highlight">
-Stock Market Education,
-Risk Management,
-Market Learning
-</span>
-aur simple language me educational content milega.
-</p>
+    <!-- Subtitle -->
+    <p class="subtext">
+      Join our learning community and grow your knowledge
+    </p>
 
-<a
-href="https://t.me/+81v3WCoAHb00NmVl"
-id="telegramBtn"
-class="cta-btn"
->
-🚀 JOIN FREE TELEGRAM CHANNEL
-</a>
+    <!-- Join Button -->
+    <a href="https://t.me/+81v3WCoAHb00NmVl" class="btn-telegram">
+      JOIN TELEGRAM
+    </a>
 
-<p class="note">
-⚠️ Ye sirf
-<span class="highlight">Educational Purpose</span>
-ke liye hai.
-Hum koi financial advice ya guaranteed profit claim nahi karte.
-Always do your own research.
-</p>
+    <!-- Hindi Quote -->
+    <p class="quote-text">
+      If your goals are good and you work hard with honesty, you'll definitely succeed.
+    </p>
 
-<div class="footer">
-© 2026 Halal Trading Education
-</div>
+    <!-- Agency Credit -->
+    <div class="agency-badge">
+      
+    </div>
 
-</div>
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="" target="_blank">Terms | Privacy | Disclaimer</a>
+    </div>
 
-</div>
+    <!-- Facebook Disclaimer -->
+    <div class="disclaimer">
+      This site is not part of Facebook™ or endorsed by Facebook™
+    </div>
 
-
-<!-- ================= SUBSCRIBE EVENT ================= -->
-<script>
-(function(){
-
-const telegramBtn = document.getElementById('telegramBtn');
-
-if(!telegramBtn) return;
-
-let eventSent = false;
-
-telegramBtn.addEventListener('click', function(e){
-
-/*
-  Stop immediate navigation so Meta Pixel
-  gets a chance to send the Subscribe event.
-*/
-e.preventDefault();
-
-if(eventSent){
-return;
-}
-
-eventSent = true;
-
-/*
-  Generate a unique event ID for this click.
-*/
-const eventID =
-'telegram_' +
-Date.now() +
-'_' +
-Math.random().toString(36).substring(2,10);
-
-/*
-  Subscribe fires ONLY when the CTA is clicked.
-*/
-if(typeof fbq === 'function'){
-
-fbq('track','Subscribe',{
-content_name:'Telegram Join',
-content_category:'Telegram',
-value:1,
-currency:'INR'
-},{
-eventID:eventID
-});
-
-}
-
-/*
-  Give the browser a short amount of time
-  to send the pixel request before opening Telegram.
-*/
-setTimeout(function(){
-
-window.location.href =
-'https://t.me/+81v3WCoAHb00NmVl';
-
-},350);
-
-});
-
-})();
-</script>
-<!-- ============== END SUBSCRIBE EVENT ============== -->
+  </div>
 
 </body>
 </html>
