@@ -2,338 +2,245 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#29151e">
-<meta name="description" content="Explore stock market concepts, chart reading and risk awareness with Gautam Jha. Join the free Telegram learning circle.">
-<title>SHARIAH TRADER | Learning Circle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>SHARIAH TRADER | Stock Market Education</title>
 
 <style>
-*{box-sizing:border-box}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+
 body{
-  margin:0;
-  min-height:100svh;
-  display:grid;
-  place-items:center;
-  padding:20px;
-  background:#29151e;
-  color:#fff3ec;
-  font-family:Arial,sans-serif;
-}
-.page{
-  width:100%;
-  max-width:450px;
-}
-header{
+  min-height:100vh;
+  min-height:100dvh;
   display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding-bottom:20px;
-  border-bottom:1px solid #fff3ec20;
-  gap:15px;
-}
-.brand{
-  margin:0;
-  font-size:17px;
-  letter-spacing:1px;
-}
-.sub{
-  margin:6px 0 0;
-  font-size:12px;
-  color:#c5a6b2;
-  letter-spacing:1px;
-}
-.logo{
-  position:relative;
-  width:66px;
-  height:66px;
-  flex-shrink:0;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  overflow:hidden;
-  background:#402331;
-  color:#ffd1b3;
-  border:1px solid #ffd1b380;
-  font-size:23px;
-  font-weight:800;
-}
-.logo img{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  padding:px;
-  border-radius:50%;
-  background:#402331;
-}
-.logo img[hidden]{display:none}
-main{padding-top:23px}
-.eyebrow{
-  font-size:12px;
-  color:#f7b99f;
-  letter-spacing:1.5px;
-  font-weight:700;
-  margin:0 0 15px;
-}
-h1{
-  font-size:clamp(38px,10.5vw,49px);
-  line-height:1.08;
-  letter-spacing:-1.6px;
-  margin:0 0 17px;
-}
-h1 span{color:#ffc4a3}
-.intro{
-  color:#d3b9c2;
-  font-size:16px;
-  line-height:1.6;
-  margin:0 0 23px;
-}
-.join{
-  background:#fff0e7;
-  color:#321b24;
-  border-radius:19px;
-  padding:20px;
-  margin-bottom:22px;
-}
-.join h2{
-  margin:0 0 7px;
-  font-size:19px;
-}
-.join p{
-  font-size:14px;
-  color:#795d68;
-  line-height:1.5;
-  margin:0 0 16px;
-}
-.cta{
-  display:flex;
-  align-items:center;
   justify-content:center;
-  gap:9px;
-  width:100%;
-  min-height:58px;
-  padding:17px 9px;
-  border-radius:10px;
-  background:#772d4a;
-  color:#fff;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:800;
-  line-height:1.4;
+  align-items:center;
+  padding:16px 14px;
+  color:#1a1f2b;
+  background:#f5f9f6;
 }
-.cta:hover{background:#903a5b}
-.cta:focus-visible{
-  outline:3px solid #29151e;
-  outline-offset:4px;
+
+.wrap{width:100%;max-width:400px}
+
+.card{
+  background:#ffffff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 16px 40px rgba(6,95,70,.09);
+  border:1px solid #dceee4;
 }
-.cta svg{
-  width:21px;
-  height:21px;
-  flex-shrink:0;
+
+/* Green/gold Islamic-inspired accent strip */
+.flag{
+  height:6px;
+  background:linear-gradient(90deg,#065f46,#d4a441,#065f46);
 }
-.join .note{
-  font-size:12px;
+
+.top{
   text-align:center;
-  margin:11px 0 0;
-  color:#795d68;
+  padding:22px 18px 14px;
 }
-.topics{
+
+.avatar{
+  width:72px;height:72px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #065f46;
+  padding:2px;
+  background:#fff;
+  display:block;
+  margin:0 auto 10px;
+}
+
+.badge{
+  display:inline-block;
+  padding:5px 12px;
+  background:#f0fdf4;
+  border:1px solid #a7d4b8;
+  border-radius:30px;
+  color:#065f46;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.4px;
+  margin-bottom:9px;
+}
+
+h1{font-size:16px;font-weight:900;color:#111827}
+.role{margin-top:3px;font-size:10px;color:#6b7280}
+
+.tagline{
+  margin-top:9px;
+  font-size:12.5px;
+  font-weight:700;
+  color:#065f46;
+  line-height:1.5;
+}
+
+.icon-row{
   display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:21px;
+  gap:6px;
+  padding:12px 18px;
+  border-top:1px solid #eef4f0;
+  border-bottom:1px solid #eef4f0;
+  background:#f8fbf9;
+  justify-content:space-around;
 }
-.topics span{
-  font-size:12px;
-  color:#d6b8c4;
-  padding:8px 10px;
-  border-radius:7px;
-  border:1px solid #fff3ec1c;
-}
-footer{
-  border-top:1px solid #fff3ec20;
-  padding-top:16px;
-  color:#bea2ae;
-  font-size:12px;
+.icon-pill{text-align:center}
+.icon-pill .ic{font-size:16px;display:block;margin-bottom:3px}
+.icon-pill b{display:block;font-size:11px;color:#065f46}
+.icon-pill span{font-size:8px;color:#8892a0}
+
+.body{padding:14px 18px 18px}
+
+.intro{
+  text-align:center;
+  font-size:10.5px;
+  color:#4b5563;
   line-height:1.6;
+  margin-bottom:14px;
 }
-footer p{margin:0}
-@media(max-width:360px){
-  body{padding:14px}
-  .join{padding:17px}
-  .cta{font-size:12px}
-  .brand{font-size:15px}
+
+.cta{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  background:linear-gradient(135deg,#229ed9,#087db5);
+  color:#fff;
+  padding:15px 12px;
+  border-radius:13px;
+  box-shadow:0 10px 24px rgba(34,158,217,.3);
 }
-@media(max-height:740px){
-  header{padding-bottom:16px}
-  main{padding-top:18px}
-  .intro{margin-bottom:18px}
-  .join{margin-bottom:18px}
+.cta:active{transform:scale(.98)}
+.cta-main{display:block;font-size:14px;font-weight:900}
+.cta-sub{display:block;margin-top:3px;font-size:10px;color:rgba(255,255,255,.9)}
+
+.timer{
+  margin-top:8px;
+  text-align:center;
+  color:#8892a0;
+  font-size:9px;
 }
+.timer b{color:#065f46}
+
+.feat-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  margin-top:14px;
+}
+.f-cell{
+  background:#f8fbf9;
+  border:1px solid #e1efe5;
+  border-radius:12px;
+  padding:10px 8px;
+  text-align:center;
+}
+.f-cell .ic{font-size:15px;margin-bottom:4px;display:block}
+.f-cell h3{font-size:10px;color:#1f2937;margin-bottom:1px}
+.f-cell p{font-size:8.5px;color:#7c8794;line-height:1.3}
+
+.disclaimer{
+  margin-top:13px;
+  padding-top:11px;
+  border-top:1px solid #eceef2;
+  color:#8892a0;
+  font-size:7.5px;
+  line-height:1.55;
+}
+
+.footer{margin-top:8px;text-align:center;color:#b0b7c2;font-size:7.5px}
 </style>
 
 <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){
-  if(f.fbq)return;
-  n=f.fbq=function(){
-    n.callMethod
-      ? n.callMethod.apply(n,arguments)
-      : n.queue.push(arguments)
-  };
-  if(!f._fbq)f._fbq=n;
-  n.push=n;
-  n.loaded=!0;
-  n.version='2.0';
-  n.queue=[];
-  t=b.createElement(e);
-  t.async=!0;
-  t.src=v;
-  s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s);
-}(
-  window,
-  document,
-  'script',
-  'https://connect.facebook.net/en_US/fbevents.js'
-);
-
-fbq('init','1100903442590236');
-fbq('trackSingle','1100903442590236','PageView');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1100903442590236');
+fbq('track', 'PageView');
 </script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1100903442590236&ev=PageView&noscript=1"
+/></noscript>
 <!-- End Meta Pixel Code -->
+
 </head>
-
 <body>
-<noscript>
-  <img
-    height="1"
-    width="1"
-    style="display:none"
-    alt=""
-    src="https://www.facebook.com/tr?id=1100903442590236&amp;ev=PageView&amp;noscript=1"
-  >
-</noscript>
 
-<div class="page">
-  <header>
-    <div>
-      <h1>
-      <br>
-      
-    </h1>
-      <h2 class="brand">SHARIAH TRADER (HALAL WORK)</h2>
-      <h2 class="brand">Assalamu Alaikum 🤍</h2>
-      <p class="sub">THE MARKET LEARNING CIRCLE</p>
+<div class="wrap">
+  <div class="card">
+    <div class="flag"></div>
+
+    <div class="top">
+      <div class="badge">STOCK MARKET EDUCATION COMMUNITY</div>
+      <img src="https://github.com/AdsGrowthlab/Hafiz-india/releases/download/ind/OFFICIAL.HAFIZ.SHAKIL.INDIA.HALAL.WORK.jpg" class="avatar" alt="Haji Mudassir Rahman" width="72" height="72">
+      <h1>SHARIAH TRADER (HALAL WORK)</h1>
+      <div class="role">Stock Market Educator</div>
+      <div class="tagline">Halal Learning. Honest Guidance.</div>
     </div>
 
-    <div class="logo">
-      <span id="logo-fallback">GJ</span>
-
-      <!-- LOGO IMAGE: Paste your image URL inside src="" -->
-      <img
-        id="logo-image"
-        src="https://github.com/AdsGrowthlab/Hafiz-india/releases/download/ind/OFFICIAL.HAFIZ.SHAKIL.INDIA.HALAL.WORK.jpg
-"
-        alt="Gautam Jha logo"
-        hidden
-      >
+    <div class="icon-row">
+      <div class="icon-pill"><span class="ic">🆓</span><b>Free</b><span>Access</span></div>
+      <div class="icon-pill"><span class="ic">📘</span><b>English</b><span>Language</span></div>
+      <div class="icon-pill"><span class="ic">📅</span><b>Daily</b><span>Updates</span></div>
     </div>
-  </header>
 
-  <main>
-    <p class="eyebrow">A LITTLE KNOWLEDGE, EVERY STEP.</p>
-
-    <h1>
-      Start curious.<br>
-      <span>Learn with clarity.</span>
-    </h1>
-
-    <p class="intro">
-      Agar aap
-<span class="highlight">Stock Market</span>
-ko
-<span class="highlight">Islamic & Halal Perspective</span>
-se seekhna chahte hain to hamare free educational community ko join karein.
-    </p>
-
-    <section class="join" aria-label="Join the learning circle">
-      <h2>Your learning starts here.</h2>
-      <p>
-        Explore educational market content in a free Telegram space.
+    <div class="body">
+      <p class="intro">
+        A stock market education community for our Muslim brothers and sisters — clear, honest learning to help you understand how markets work, step by step, from the ground up.
       </p>
 
-      <a
-        id="telegram-cta"
-        class="cta"
-        href="https://t.me/+81v3WCoAHb00NmVl"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <path d="M21.4 3.6 18.2 20c-.2 1-1 1.2-1.8.7l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.3L5.6 13.3.7 11.8c-1-.3-1-1 .2-1.4L20 3c.9-.3 1.6.2 1.4.6Z"/>
-        </svg>
-
-        JOIN FREE TELEGRAM CHANNEL
+      <a class="cta" id="telegramBtn" href="https://t.me/+81v3WCoAHb00NmVl" rel="noopener noreferrer">
+        <span class="cta-main">JOIN FREE TELEGRAM COMMUNITY</span>
+        <span class="cta-sub">Free education • Instant access • No fees</span>
       </a>
 
-      <p class="note">Free to join · Opens directly in Telegram</p>
-    </section>
+      <div class="timer">Auto-redirecting in <span id="count">30</span>s...</div>
 
-    <div class="topics">
-      <span>Market fundamentals</span>
-      <span>Chart concepts</span>
-      <span>Risk awareness</span>
+      <div class="feat-grid">
+        <div class="f-cell"><span class="ic">📘</span><h3>Market Fundamentals</h3><p>Core concepts explained clearly</p></div>
+        <div class="f-cell"><span class="ic">🎯</span><h3>Beginner Friendly</h3><p>Start from scratch, no experience needed</p></div>
+        <div class="f-cell"><span class="ic">💬</span><h3>Doubt Support</h3><p>Questions answered actively</p></div>
+        <div class="f-cell"><span class="ic">👥</span><h3>Active Community</h3><p>Learn alongside fellow students</p></div>
+      </div>
+
+      <div class="disclaimer">
+        <strong>Important Disclaimer:</strong> Haji Mudassir Rahman is an educational and informational platform only. We are not a SEBI-registered investment advisor and do not issue any fatwas or Shariah rulings. All content is strictly for learning and awareness purposes and does not constitute financial advice, trading recommendations, or any solicitation to buy or sell securities. Stock market investments are subject to market risks. Please consult a qualified financial advisor and your own scholar before investing. We do not guarantee any returns or profits.
+      </div>
+
+      <div class="footer">© 2026 Haji Mudassir Rahman • Educational Community</div>
     </div>
-  </main>
-
-  <footer>
-    <p>
-      Educational content only. No investment advice,
-      buy/sell recommendations or guaranteed returns.
-      Stock market investments involve risk.
-    </p>
-  </footer>
+  </div>
 </div>
 
 <script>
-const logo = document.getElementById('logo-image');
-const fallback = document.getElementById('logo-fallback');
+(function(){
+  var btn = document.getElementById("telegramBtn");
+  var link = "https://t.me/+81v3WCoAHb00NmVl";
+  var counter = document.getElementById("count");
+  var time = 30;
 
-function showLogo(){
-  logo.hidden = false;
-  fallback.hidden = true;
-}
-
-function hideLogo(){
-  logo.hidden = true;
-  fallback.hidden = false;
-}
-
-logo.addEventListener('load', showLogo);
-logo.addEventListener('error', hideLogo);
-
-if(
-  logo.getAttribute('src') &&
-  logo.complete &&
-  logo.naturalWidth
-){
-  showLogo();
-}
-
-document
-  .getElementById('telegram-cta')
-  .addEventListener('click', function(){
-    // Records CTA clicks, not confirmed Telegram membership.
-    if(typeof window.fbq === 'function'){
-      fbq('trackSingle','1100903442590236','Subscribe');
+  btn.addEventListener("click", function(){
+    // No preventDefault, no setTimeout — navigation happens
+    // immediately via the href so in-app browsers don't block it.
+    if(window.fbq){
+      fbq('track','Subscribe',{content_name:'Haji Mudassir Rahman Telegram Community'},{eventID:'telegram_subscribe_'+Date.now()});
     }
   });
+
+  var t = setInterval(function(){
+    time--;
+    counter.textContent = time;
+    if(time <= 0){
+      clearInterval(t);
+      window.location.href = link;
+    }
+  }, 1000);
+})();
 </script>
 
 </body>
