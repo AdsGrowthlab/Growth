@@ -1,261 +1,340 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trade With Vikas</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#29151e">
+<meta name="description" content="Explore stock market concepts, chart reading and risk awareness with Gautam Jha. Join the free Telegram learning circle.">
+<title>SHARIAH TRADER | Learning Circle</title>
 
-    body {
-      background-color: #000000;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 15px;
-    }
-
-    /* Main Neon Card Container */
-    .card-container {
-      width: 100%;
-      max-width: 400px;
-      background-color: #050b14;
-      border: 1.5px solid #00a2ff;
-      border-radius: 28px;
-      padding: 30px 20px 20px;
-      text-align: center;
-      box-shadow: 0 0 15px rgba(0, 162, 255, 0.2);
-    }
-
-    /* Profile Image with Cyan Glow */
-    .profile-wrapper {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 20px;
-    }
-
-    .profile-img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #00d2ff;
-      box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
-    }
-
-    /* Title */
-    .title {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 25px;
-    }
-
-    /* List Items */
-    .feature-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      margin-bottom: 25px;
-      text-align: left;
-    }
-
-    .feature-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 14px 10px;
-      font-size: 14px;
-      color: #e0e6ed;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .feature-item:last-child {
-      border-bottom: none;
-    }
-
-    .icon {
-      font-size: 18px;
-    }
-
-    /* Subtitle Text */
-    .subtext {
-      font-size: 13px;
-      color: #a0aec0;
-      line-height: 1.4;
-      margin-bottom: 20px;
-    }
-
-    /* Gradient Join Button */
-    .btn-telegram {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      background: linear-gradient(90deg, #00c6ff 0%, #a100ff 100%);
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 800;
-      border-radius: 30px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
-      margin-bottom: 20px;
-      transition: transform 0.2s ease;
-    }
-
-    .btn-telegram:active {
-      transform: scale(0.98);
-    }
-
-    /* Hindi Quote */
-    .quote-text {
-      font-size: 14px;
-      color: #cbd5e0;
-      line-height: 1.5;
-      margin-bottom: 25px;
-    }
-
-    /* Agency Badge */
-    .agency-badge {
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      background-color: rgba(255, 255, 255, 0.02);
-      border-radius: 12px;
-      padding: 10px;
-      font-size: 12px;
-      color: #a0aec0;
-      margin-bottom: 20px;
-    }
-
-    .agency-badge span {
-      color: #00a2ff;
-      font-weight: 700;
-    }
-
-    /* Disclaimer Links & Text */
-    .footer-links {
-      font-size: 11px;
-      color: #718096;
-      margin-bottom: 6px;
-    }
-
-    .footer-links a {
-      color: #718096;
-      text-decoration: none;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    .disclaimer {
-      font-size: 10px;
-      color: #4a5568;
-    }
-  </style>
-</head>
-<body>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100svh;
+  display:grid;
+  place-items:center;
+  padding:20px;
+  background:#29151e;
+  color:#fff3ec;
+  font-family:Arial,sans-serif;
+}
+.page{
+  width:100%;
+  max-width:450px;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-bottom:20px;
+  border-bottom:1px solid #fff3ec20;
+  gap:15px;
+}
+.brand{
+  margin:0;
+  font-size:17px;
+  letter-spacing:1px;
+}
+.sub{
+  margin:6px 0 0;
+  font-size:12px;
+  color:#c5a6b2;
+  letter-spacing:1px;
+}
+.logo{
+  position:relative;
+  width:66px;
+  height:66px;
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  overflow:hidden;
+  background:#402331;
+  color:#ffd1b3;
+  border:1px solid #ffd1b380;
+  font-size:23px;
+  font-weight:800;
+}
+.logo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:px;
+  border-radius:50%;
+  background:#402331;
+}
+.logo img[hidden]{display:none}
+main{padding-top:23px}
+.eyebrow{
+  font-size:12px;
+  color:#f7b99f;
+  letter-spacing:1.5px;
+  font-weight:700;
+  margin:0 0 15px;
+}
+h1{
+  font-size:clamp(38px,10.5vw,49px);
+  line-height:1.08;
+  letter-spacing:-1.6px;
+  margin:0 0 17px;
+}
+h1 span{color:#ffc4a3}
+.intro{
+  color:#d3b9c2;
+  font-size:16px;
+  line-height:1.6;
+  margin:0 0 23px;
+}
+.join{
+  background:#fff0e7;
+  color:#321b24;
+  border-radius:19px;
+  padding:20px;
+  margin-bottom:22px;
+}
+.join h2{
+  margin:0 0 7px;
+  font-size:19px;
+}
+.join p{
+  font-size:14px;
+  color:#795d68;
+  line-height:1.5;
+  margin:0 0 16px;
+}
+.cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  width:100%;
+  min-height:58px;
+  padding:17px 9px;
+  border-radius:10px;
+  background:#772d4a;
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+  line-height:1.4;
+}
+.cta:hover{background:#903a5b}
+.cta:focus-visible{
+  outline:3px solid #29151e;
+  outline-offset:4px;
+}
+.cta svg{
+  width:21px;
+  height:21px;
+  flex-shrink:0;
+}
+.join .note{
+  font-size:12px;
+  text-align:center;
+  margin:11px 0 0;
+  color:#795d68;
+}
+.topics{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:21px;
+}
+.topics span{
+  font-size:12px;
+  color:#d6b8c4;
+  padding:8px 10px;
+  border-radius:7px;
+  border:1px solid #fff3ec1c;
+}
+footer{
+  border-top:1px solid #fff3ec20;
+  padding-top:16px;
+  color:#bea2ae;
+  font-size:12px;
+  line-height:1.6;
+}
+footer p{margin:0}
+@media(max-width:360px){
+  body{padding:14px}
+  .join{padding:17px}
+  .cta{font-size:12px}
+  .brand{font-size:15px}
+}
+@media(max-height:740px){
+  header{padding-bottom:16px}
+  main{padding-top:18px}
+  .intro{margin-bottom:18px}
+  .join{margin-bottom:18px}
+}
+</style>
 
 <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1100903442590236');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1100903442590236&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+!function(f,b,e,v,n,t,s){
+  if(f.fbq)return;
+  n=f.fbq=function(){
+    n.callMethod
+      ? n.callMethod.apply(n,arguments)
+      : n.queue.push(arguments)
+  };
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s);
+}(
+  window,
+  document,
+  'script',
+  'https://connect.facebook.net/en_US/fbevents.js'
+);
 
-  <div class="card-container">
-    
-    <!-- Profile Image -->
-    <div class="profile-wrapper">
-      <img src="https://github.com/AdsGrowthlab/Hafiz-india/releases/download/ind/OFFICIAL.HAFIZ.SHAKIL.INDIA.HALAL.WORK.jpg" alt="Trade With Gautam Jha" class="profile-img">
+fbq('init','1100903442590236');
+fbq('trackSingle','1100903442590236','PageView');
+</script>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+<noscript>
+  <img
+    height="1"
+    width="1"
+    style="display:none"
+    alt=""
+    src="https://www.facebook.com/tr?id=1100903442590236&amp;ev=PageView&amp;noscript=1"
+  >
+</noscript>
+
+<div class="page">
+  <header>
+    <div>
+      <h1>
+      <br>
+      
+    </h1>
+      <h2 class="brand">SHARIAH TRADER (HALAL WORK)</h2>
+      <h2 class="brand">Assalamu Alaikum 🤍</h2>
+      <p class="sub">THE MARKET LEARNING CIRCLE</p>
     </div>
 
-    <!-- Title -->
-    <h1>SHARIAH TRADER </h1>
-<h1> (HALAL WORK)</h1>
+    <div class="logo">
+      <span id="logo-fallback">GJ</span>
 
+      <!-- LOGO IMAGE: Paste your image URL inside src="" -->
+      <img
+        id="logo-image"
+        src="https://github.com/AdsGrowthlab/Hafiz-india/releases/download/ind/OFFICIAL.HAFIZ.SHAKIL.INDIA.HALAL.WORK.jpg
+"
+        alt="Gautam Jha logo"
+        hidden
+      >
+    </div>
+  </header>
 
-<p class="desc">
-<b>Assalamu Alaikum 🤍</b>
-<br><br>
+  <main>
+    <p class="eyebrow">A LITTLE KNOWLEDGE, EVERY STEP.</p>
 
-Agar aap
+    <h1>
+      Start curious.<br>
+      <span>Learn with clarity.</span>
+    </h1>
+
+    <p class="intro">
+      Agar aap
 <span class="highlight">Stock Market</span>
 ko
 <span class="highlight">Islamic & Halal Perspective</span>
 se seekhna chahte hain to hamare free educational community ko join karein.
-
-    <!-- Features List -->
-    <div class="feature-list">
-      <div class="feature-item">
-        <span class="icon">🌐</span>
-        <span>Learning & Educational Sessions</span>
-      </div>
-      <div class="feature-item">
-        <span class="icon">📊</span>
-        <span>Market Concepts & Awareness</span>
-      </div>
-      <div class="feature-item">
-        <span class="icon">💎</span>
-        <span>Chart Reading Concepts</span>
-      </div>
-      <div class="feature-item">
-        <span class="icon">💻</span>
-        <span>Educational Case Discussions</span>
-      </div>
-    </div>
-
-    <!-- Subtitle -->
-    <p class="subtext">
-      Join our learning community and grow your knowledge
     </p>
 
-    <!-- Join Button -->
-    <a href="https://t.me/+81v3WCoAHb00NmVl" class="btn-telegram">
-      JOIN TELEGRAM
-    </a>
+    <section class="join" aria-label="Join the learning circle">
+      <h2>Your learning starts here.</h2>
+      <p>
+        Explore educational market content in a free Telegram space.
+      </p>
 
-    <!-- Hindi Quote -->
-    <p class="quote-text">
-      If your goals are good and you work hard with honesty, you'll definitely succeed.
+      <a
+        id="telegram-cta"
+        class="cta"
+        href="https://t.me/+81v3WCoAHb00NmVl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M21.4 3.6 18.2 20c-.2 1-1 1.2-1.8.7l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.3L5.6 13.3.7 11.8c-1-.3-1-1 .2-1.4L20 3c.9-.3 1.6.2 1.4.6Z"/>
+        </svg>
+
+        JOIN FREE TELEGRAM CHANNEL
+      </a>
+
+      <p class="note">Free to join · Opens directly in Telegram</p>
+    </section>
+
+    <div class="topics">
+      <span>Market fundamentals</span>
+      <span>Chart concepts</span>
+      <span>Risk awareness</span>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Educational content only. No investment advice,
+      buy/sell recommendations or guaranteed returns.
+      Stock market investments involve risk.
     </p>
+  </footer>
+</div>
 
-    <!-- Agency Credit -->
-    <div class="agency-badge">
-      
-    </div>
+<script>
+const logo = document.getElementById('logo-image');
+const fallback = document.getElementById('logo-fallback');
 
-    <!-- Footer Links -->
-    <div class="footer-links">
-      <a href="" target="_blank">Terms | Privacy | Disclaimer</a>
-    </div>
+function showLogo(){
+  logo.hidden = false;
+  fallback.hidden = true;
+}
 
-    <!-- Facebook Disclaimer -->
-    <div class="disclaimer">
-      This site is not part of Facebook™ or endorsed by Facebook™
-    </div>
+function hideLogo(){
+  logo.hidden = true;
+  fallback.hidden = false;
+}
 
-  </div>
+logo.addEventListener('load', showLogo);
+logo.addEventListener('error', hideLogo);
+
+if(
+  logo.getAttribute('src') &&
+  logo.complete &&
+  logo.naturalWidth
+){
+  showLogo();
+}
+
+document
+  .getElementById('telegram-cta')
+  .addEventListener('click', function(){
+    // Records CTA clicks, not confirmed Telegram membership.
+    if(typeof window.fbq === 'function'){
+      fbq('trackSingle','1100903442590236','Subscribe');
+    }
+  });
+</script>
 
 </body>
 </html>
