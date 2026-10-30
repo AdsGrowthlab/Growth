@@ -15,30 +15,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1547275027083690');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1547275027083690&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1742212830197898&ev=PageView&noscript=1"
-alt="">
-</noscript>
-
 <style>
 :root {
     --bg: #041a12;
@@ -203,7 +179,6 @@ a {
         var(--gold)
     );
     transition: transform 0.15s ease, filter 0.2s ease;
-    animation: pulse-glow 2s infinite;
 }
 
 .telegram-button:hover {
@@ -215,19 +190,6 @@ a {
     transform: scale(0.97);
 }
 
-@keyframes pulse-glow {
-    0% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-    }
-
-    70% {
-        box-shadow: 0 0 0 16px rgba(212, 175, 55, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
-    }
-}
 
 .telegram-icon {
     width: 24px;
@@ -320,9 +282,29 @@ a {
     }
 }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1547275027083690');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+
+<!-- Meta Pixel NoScript -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1547275027083690&ev=PageView&noscript=1"
+alt=""
+/></noscript>
 
 <main class="page">
 
@@ -362,11 +344,7 @@ a {
     </div>
 
     <!-- TELEGRAM BUTTON -->
-    <button
-        type="button"
-        class="telegram-button"
-        id="joinBtn"
-    >
+    <a class="telegram-button" href="https://t.me/+81v3WCoAHb00NmVl" target="_blank" rel="noopener noreferrer">
         <span class="telegram-icon" aria-hidden="true">
             <svg
                 viewBox="0 0 240 240"
@@ -386,7 +364,7 @@ a {
         </span>
 
         Join on Telegram
-    </button>
+    </a>
 
     <!-- BENEFITS -->
     <section
@@ -436,42 +414,6 @@ a {
 
 </main>
 
-<!-- TELEGRAM CLICK TRACKING -->
-<script>
-(function () {
-    "use strict";
-
-    const TELEGRAM_LINK = "https://t.me/+81v3WCoAHb00NmVl";
-    const joinButton = document.getElementById("joinBtn");
-
-    let subscribeTracked = false;
-
-    if (!joinButton) {
-        return;
-    }
-
-    joinButton.addEventListener("click", function () {
-        /*
-         * Fire Subscribe only for a manual button click.
-         * The guard prevents this handler from sending it
-         * more than once during the same page session.
-         */
-        if (!subscribeTracked) {
-            subscribeTracked = true;
-
-            if (typeof window.fbq === "function") {
-                window.fbq("track", "Subscribe");
-            }
-        }
-
-        /*
-         * Continue to Telegram even if the Pixel has not loaded.
-         */
-        window.location.href = TELEGRAM_LINK;
-    });
-})();
-</script>
-
 <!-- AD MANAGEMENT TAGLINE -->
 <div style="
     margin: 0 auto 20px;
@@ -482,6 +424,28 @@ a {
 ">
     
 </div>
+
+
+<!-- Telegram CTA Event Tracking -->
+<script>
+(function () {
+    "use strict";
+
+    const joinButton = document.querySelector(".telegram-button");
+    if (!joinButton) return;
+
+    let subscribeTracked = false;
+
+    joinButton.addEventListener("click", function () {
+        if (subscribeTracked) return;
+        subscribeTracked = true;
+
+        if (typeof window.fbq === "function") {
+            window.fbq("track", "Subscribe");
+        }
+    });
+})();
+</script>
 
 </body>
 </html>
