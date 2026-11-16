@@ -3,12 +3,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Sharia Halaal Trader – Join on Telegram</title>
+<meta name="description" content="Shariah-focused stock market education in Hinglish and English: halal screening basics, chart basics and ethical investing.">
 <meta name="theme-color" content="#0b2545">
-
-<title>Sharia Halaal Trader - Join Telegram</title>
-
-<meta name="description" content="Learn Shariah-focused stock market education, halal screening, chart basics and ethical investing.">
 
 <style>
 * {
@@ -19,198 +18,302 @@
 
 body {
     min-height: 100vh;
+    padding: 24px 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
-    background: linear-gradient(145deg, #071a32, #102e50);
-    font-family: Arial, sans-serif;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    background:
+        radial-gradient(circle at top, #183d63 0%, #0b2545 48%, #06172b 100%);
 }
 
 .card {
     width: 100%;
-    max-width: 430px;
-    background: #fff;
-    color: #173454;
-    border-radius: 22px;
-    overflow: hidden;
+    max-width: 440px;
+    padding: 27px 23px;
     text-align: center;
-    box-shadow: 0 15px 45px rgba(0,0,0,.25);
+    border: 1px solid rgba(218,177,73,.45);
+    border-radius: 22px;
+    background: linear-gradient(160deg,#163653,#0c2742);
+    box-shadow: 0 18px 55px rgba(0,0,0,.35);
+    overflow: hidden;
 }
 
-.top-band {
-    height: 9px;
-    background: linear-gradient(90deg, #c59b42, #f5d98c, #c59b42);
-}
-
-.content {
-    padding: 30px 24px 25px;
+.band {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    margin: -27px -23px 25px;
+    height: 7px;
+    background: #d9b34d;
 }
 
 .logo {
-    width: 92px;
-    height: 92px;
-    margin: 0 auto 18px;
+    width: 104px;
+    height: 104px;
+    margin: 0 auto 17px;
+    overflow: hidden;
     border-radius: 50%;
-    background: #0b2545;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px solid #e8d19a;
-    font-size: 43px;
+    border: 3px solid #e2bd5a;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
 
-.greeting {
-    color: #a77b25;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 12px;
+.logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.namaskara {
+    color: #e5c66f;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: 800;
-    color: #0b2545;
-    line-height: 1.2;
-    margin-bottom: 12px;
+    color: #fff;
+    font-size: 29px;
+    line-height: 1.25;
+    margin-bottom: 13px;
 }
 
 h1 span {
-    color: #c0943e;
+    color: #e4bd59;
 }
 
-.subtitle {
-    color: #64748b;
-    font-size: 14px;
+.ur {
+    direction: rtl;
+    unicode-bidi: isolate;
+}
+
+.kn {
+    color: #f1d98d;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.sub {
+    color: #c4d2df;
+    font-size: 13px;
     line-height: 1.6;
     margin-bottom: 23px;
 }
 
 .tiles {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 9px;
-    margin-bottom: 25px;
+    grid-template-columns: 1fr;
+    gap: 11px;
+    margin-bottom: 23px;
 }
 
 .tile {
-    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-align: left;
+    padding: 13px 14px;
+    border: 1px solid rgba(255,255,255,.1);
     border-radius: 12px;
-    padding: 15px 5px;
-    min-height: 105px;
+    background: rgba(255,255,255,.055);
 }
 
-.tile .icon {
+.ic {
     font-size: 25px;
-    display: block;
-    margin-bottom: 8px;
+    width: 35px;
+    flex-shrink: 0;
 }
 
 .tile b {
     display: block;
-    font-size: 11px;
-    color: #163454;
-    line-height: 1.3;
+    font-size: 14px;
+    color: #f1d88b;
+    margin-bottom: 4px;
 }
 
 .tile small {
-    display: block;
-    font-size: 10px;
-    color: #718096;
-    margin-top: 5px;
+    color: #c2d0dc;
+    font-size: 12px;
 }
 
-.join-btn {
+.cta {
     width: 100%;
-    min-height: 58px;
+    min-height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #229ed9;
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 15px;
+    padding: 15px 12px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(34,158,217,.25);
-    transition: background .2s;
+    border: 0;
+    background: #d9b34d;
+    color: #102b45;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 6px 18px rgba(0,0,0,.2);
+    transition: background .2s ease, transform .2s ease;
 }
 
-.join-btn:hover {
-    background: #168bc3;
+.cta:hover {
+    background: #edce72;
 }
 
-.join-btn:focus-visible {
-    outline: 3px solid #c0943e;
+.cta:active {
+    transform: scale(.98);
+}
+
+.cta:focus-visible,
+.links a:focus-visible,
+.close:focus-visible {
+    outline: 3px solid white;
     outline-offset: 4px;
 }
 
-.telegram-icon {
-    width: 25px;
-    height: 25px;
+.cta[aria-disabled="true"] {
+    opacity: .75;
+    cursor: wait;
+}
+
+.cta svg {
+    width: 23px;
+    height: 23px;
     flex-shrink: 0;
 }
 
 .free {
-    margin-top: 15px;
-    color: #26834c;
+    margin: 13px 0 20px;
+    color: #e8d38e;
     font-size: 13px;
-    font-weight: bold;
 }
 
-.divider {
+hr {
     border: 0;
-    border-top: 1px solid #e5e7eb;
-    margin: 23px 0 17px;
+    border-top: 1px solid rgba(255,255,255,.16);
+    margin: 17px 0;
 }
 
-.disclaimer {
-    color: #778397;
-    font-size: 10px;
-    line-height: 1.7;
+.disc {
+    color: #b9c8d5;
+    font-size: 11px;
+    line-height: 1.65;
     text-align: left;
 }
 
-.footer {
-    background: #f6f8fb;
-    padding: 14px;
-    color: #8792a1;
-    font-size: 11px;
+.disc b {
+    color: #e3c16c;
 }
 
-.footer a {
-    color: #a77b25;
+.links {
+    margin-top: 17px;
+    color: #aebdcb;
+    font-size: 12px;
+}
+
+.links a {
+    color: #e7ca78;
     text-decoration: none;
 }
 
+.links a:hover {
+    text-decoration: underline;
+}
+
+.footer-note {
+    margin-top: 16px;
+    color: #8199ad;
+    font-size: 10px;
+}
+
+/* Privacy popup */
+.modal[hidden] {
+    display: none !important;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgba(0,0,0,.78);
+}
+
+.mbox {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    max-height: 82vh;
+    overflow-y: auto;
+    padding: 25px 21px;
+    border: 1px solid #c9a74e;
+    border-radius: 16px;
+    background: #102b45;
+    text-align: left;
+}
+
+.mbox h2 {
+    color: #f0d37f;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.mbox h3 {
+    color: #e7ca78;
+    font-size: 14px;
+    margin: 17px 0 6px;
+}
+
+.mbox p,
+.mbox small {
+    color: #c5d2de;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.mbox a {
+    color: #f0d37f;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    background: #28445d;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 @media(max-width:360px) {
-    .content {
-        padding: 25px 16px;
+    .card {
+        padding: 23px 16px;
     }
-
+    .band {
+        margin-left: -16px;
+        margin-right: -16px;
+        margin-top: -23px;
+    }
     h1 {
-        font-size: 26px;
-    }
-
-    .tile b {
-        font-size: 10px;
+        font-size: 25px;
     }
 }
 </style>
 
-<!-- Meta Pixel: Single Pixel Installation -->
+<!-- Meta Pixel: one initialization only -->
 <script>
 !function(f,b,e,v,n,t,s)
-{
-if(f.fbq)return;
-n=f.fbq=function(){
-n.callMethod ?
-n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-};
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;
 n.push=n;
 n.loaded=!0;
@@ -220,7 +323,7 @@ t=b.createElement(e);
 t.async=!0;
 t.src=v;
 s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s);
+s.parentNode.insertBefore(t,s)
 }(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
@@ -235,144 +338,250 @@ fbq('track', 'PageView');
 
 <main class="card">
 
-<div class="top-band"></div>
+    <div class="band"></div>
 
-<div class="content">
+    <div class="logo">
+        <img
+          src="https://github.com/AdsGrowthlab/h/releases/download/h/Salman.jpeg"
+          alt="Sharia Halaal Trader Logo"
+          width="104"
+          height="104">
+    </div>
 
-<div class="https://github.com/AdsGrowthlab/h/releases/download/h/Salman.jpeg" aria-label="Islamic education">☪</div>
+    <div class="namaskara">☪️ Assalamu Alaikum</div>
 
-<div class="greeting">☪ Assalamu Alaikum</div>
+    <h1>Sharia Halaal <span>Trader</span></h1>
 
-<h1>Sharia Halaal <span>Trader</span></h1>
+    <p class="kn ur" lang="ur">
+        حلال طریقے سے شیئر مارکیٹ سیکھیں
+    </p>
 
-<p class="subtitle">
-Shariah-focused stock market learning in Hinglish & English.
-</p>
+    <p class="sub">
+        Shariah-focused learning · Hinglish &amp; English
+    </p>
 
-<div class="tiles">
+    <div class="tiles">
 
-<div class="tile">
-<span class="icon">🕌</span>
-<b>Halal Screening</b>
-<small>Learn the basics</small>
-</div>
+        <div class="tile">
+            <span class="ic">🕌</span>
+            <div>
+                <b>Halal Screening</b>
+                <small>Basics samjhein</small>
+            </div>
+        </div>
 
-<div class="tile">
-<span class="icon">📊</span>
-<b>Chart Basics</b>
-<small>Easy learning</small>
-</div>
+        <div class="tile">
+            <span class="ic">📊</span>
+            <div>
+                <b>Chart Basics</b>
+                <small>Easy &amp; simple</small>
+            </div>
+        </div>
 
-<div class="tile">
-<span class="icon">⚖️</span>
-<b>Ethical Investing</b>
-<small>Interest-free focus</small>
-</div>
+        <div class="tile">
+            <span class="ic">⚖️</span>
+            <div>
+                <b>Ethical Investing</b>
+                <small>Interest-free focus</small>
+            </div>
+        </div>
 
-</div>
+    </div>
 
-<!-- Telegram CTA -->
-<a
-id="telegramJoin"
-class="join-btn"
-href="https://t.me/+8dmExi9qqfgyNzBl"
-rel="noopener"
->
-<svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true">
-<circle cx="12" cy="12" r="12" fill="#fff"/>
-<path d="M5.5 11.8l11.6-4.5c.5-.2 1 .1.8.9l-2 9.3c-.1.6-.5.8-1 .5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5.1c.2-.2 0-.3-.4-.1l-6.9 4.4-3-.9c-.6-.2-.6-.6.1-.9z" fill="#13315c"/>
-</svg>
+    <a
+      id="cta"
+      class="cta"
+      href="https://t.me/+8dmExi9qqfgyNzBl"
+      rel="noopener">
 
-JOIN FREE TELEGRAM CHANNEL
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="12" fill="#fff"/>
+            <path d="M5.5 11.8l11.6-4.5c.5-.2 1 .1.8.9l-2 9.3c-.1.6-.5.8-1 .5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5.1c.2-.2 0-.3-.4-.1l-6.9 4.4-3-.9c-.6-.2-.6-.6.1-.9z" fill="#13315c"/>
+        </svg>
 
-</a>
+        <span id="ctaText">JOIN FREE TELEGRAM CHANNEL</span>
+    </a>
 
-<p class="free">✓ 100% Free Educational Community</p>
+    <p class="free">
+        ✅ <b>Bilkul Free</b> ·
+        <span class="ur" lang="ur">بالکل مفت</span>
+    </p>
 
-<hr class="divider">
+    <hr>
 
-<p class="disclaimer">
-<strong>Disclaimer:</strong> This channel shares stock market
-education only. We do not provide buy/sell recommendations,
-tips or trading signals. We are not SEBI registered.
-Investing involves market risk. Please do your own research.
-Shariah opinions on individual stocks may differ.
-</p>
+    <p class="disc">
+        <b>Disclaimer:</b>
+        This channel shares stock market education only.
+        We do not give buy/sell recommendations, tips or signals
+        and are not SEBI registered. Investing involves risk.
+        Shariah views on specific stocks can differ; please consult
+        a qualified scholar and do your own research.
+    </p>
 
-</div>
+    <p class="links">
+        <a href="#" id="openPrivacy">Privacy Policy</a>
+        ·
+        <a href="mailto:shariahalaaltrader.help@gmail.com">Contact</a>
+    </p>
 
-<div class="footer">
-Educational Purpose Only ·
-<a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">
-Privacy Information
-</a>
-</div>
+    <p class="footer-note">Educational Purpose Only</p>
 
 </main>
 
-<!-- Meta Pixel fallback for browsers without JavaScript -->
-<noscript>
-<img
-height="1"
-width="1"
-style="display:none"
-alt=""
-src="https://www.facebook.com/tr?id=2004017566955331&ev=PageView&noscript=1"
-/>
-</noscript>
+<!-- Privacy Policy -->
+<div class="modal" id="privacy" role="dialog"
+     aria-modal="true" aria-labelledby="ppTitle" hidden>
+
+    <div class="mbox">
+
+        <button class="close" id="closePrivacy"
+                aria-label="Close">✕</button>
+
+        <h2 id="ppTitle">Privacy Policy</h2>
+        <small>Last updated: November 2026</small>
+
+        <h3>Who we are</h3>
+        <p>
+            Sharia Halaal Trader runs a Telegram channel that shares
+            stock market education with a Shariah-compliant focus.
+        </p>
+
+        <h3>What we collect</h3>
+        <p>
+            This website does not ask for your name, phone number
+            or email. Meta Pixel may collect technical information
+            such as browser, device and page visit information
+            for advertising measurement.
+        </p>
+
+        <h3>Cookies and tracking</h3>
+        <p>
+            Meta Pixel may use cookies or similar technologies
+            to measure website visits and advertising interactions.
+            You can manage cookies through your browser settings.
+        </p>
+
+        <h3>Third parties</h3>
+        <p>
+            Meta Platforms provides advertising measurement.
+            When you visit or join our Telegram channel,
+            Telegram's privacy policy also applies.
+        </p>
+
+        <p>
+            <a href="https://www.facebook.com/privacy/policy/"
+               target="_blank" rel="noopener">
+               Meta Privacy Policy
+            </a>
+        </p>
+
+        <h3>Not financial advice</h3>
+        <p>
+            All content is for educational purposes only.
+            We do not give buy/sell recommendations, tips or signals.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+            <a href="mailto:shariahalaaltrader.help@gmail.com">
+                shariahalaaltrader.help@gmail.com
+            </a>
+        </p>
+
+    </div>
+</div>
 
 <script>
-(function() {
+(function () {
+    'use strict';
 
-    const button = document.getElementById('telegramJoin');
+    const TELEGRAM_URL = 'https://t.me/+8dmExi9qqfgyNzBl';
 
-    if (!button) return;
+    const cta = document.getElementById('cta');
+    const ctaText = document.getElementById('ctaText');
 
-    let eventSent = false;
+    let subscribeSent = false;
 
-    button.addEventListener('click', function(event) {
+    cta.addEventListener('click', function (event) {
 
-        // Ignore synthetic JavaScript-generated clicks.
+        // Reject clicks generated by JavaScript rather than
+        // a real browser user interaction.
         if (!event.isTrusted) {
             event.preventDefault();
             return;
         }
 
-        // Allow browser features such as opening in a new tab.
-        if (
-            event.button !== 0 ||
-            event.ctrlKey ||
-            event.metaKey ||
-            event.shiftKey ||
-            event.altKey
-        ) {
-            return;
-        }
-
-        // Prevent duplicate event firing on repeated clicks.
-        if (eventSent) {
+        // Only one Subscribe event per page load.
+        if (subscribeSent) {
             event.preventDefault();
             return;
         }
 
-        eventSent = true;
-
-        // Count only an explicit CTA interaction.
+        subscribeSent = true;
         event.preventDefault();
 
+        cta.setAttribute('aria-disabled', 'true');
+        ctaText.textContent = 'OPENING TELEGRAM...';
+
+        // Send exactly one browser Subscribe event.
         if (typeof window.fbq === 'function') {
-            window.fbq('track', 'Subscribe');
+            try {
+                window.fbq('track', 'Subscribe');
+            } catch (error) {
+                // Telegram navigation should still work
+                // if tracking fails.
+            }
         }
 
-        // Continue to Telegram even if tracking is blocked.
-        setTimeout(function() {
-            window.location.assign(button.href);
-        }, 400);
+        // Continue to Telegram even if the Pixel is blocked.
+        window.setTimeout(function () {
+            window.location.href = TELEGRAM_URL;
+        }, 500);
 
+    });
+
+    // Privacy popup
+    const privacy = document.getElementById('privacy');
+    const openPrivacy = document.getElementById('openPrivacy');
+    const closePrivacy = document.getElementById('closePrivacy');
+
+    openPrivacy.addEventListener('click', function (event) {
+        event.preventDefault();
+        privacy.hidden = false;
+        closePrivacy.focus();
+    });
+
+    closePrivacy.addEventListener('click', function () {
+        privacy.hidden = true;
+        openPrivacy.focus();
+    });
+
+    privacy.addEventListener('click', function (event) {
+        if (event.target === privacy) {
+            privacy.hidden = true;
+            openPrivacy.focus();
+        }
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !privacy.hidden) {
+            privacy.hidden = true;
+            openPrivacy.focus();
+        }
     });
 
 })();
 </script>
+
+<!-- No-JavaScript PageView fallback -->
+<noscript>
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      alt=""
+      src="https://www.facebook.com/tr?id=2004017566955331&ev=PageView&noscript=1">
+</noscript>
 
 </body>
 </html>
