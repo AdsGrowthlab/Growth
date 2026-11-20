@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +36,6 @@ body{
   border:1px solid rgba(212,175,55,.25);
 }
 
-/* Header */
 .header{
   position:relative;
   background:linear-gradient(160deg,#0f5132,#0a3320);
@@ -207,7 +207,7 @@ h1{font-size:21px;font-weight:900;color:#fff}
 }
 </style>
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -226,7 +226,7 @@ fbq('track', 'PageView');
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1597186881864780&ev=PageView&noscript=1"/>
 </noscript>
-<!-- End Meta Pixel Code -->
+<!-- End Meta Pixel -->
 
 </head>
 <body>
@@ -326,7 +326,7 @@ src="https://www.facebook.com/tr?id=1597186881864780&ev=PageView&noscript=1"/>
         © 2026 Haji Salman Memon • Educational Community
       </div>
 
-      <!-- Ad Management Tagline -->
+       <!-- Ad Management Tagline -->
       <div class="ad-management">
         🚀 Ads Managed by
         <a href="https://t.me/+O4CHhDLfCpM3YjQ1"
@@ -348,10 +348,17 @@ src="https://www.facebook.com/tr?id=1597186881864780&ev=PageView&noscript=1"/>
   var counter = document.getElementById("count");
   var time = 30;
 
-  /* Subscribe event on CTA click */
+  /* Prevent duplicate Subscribe events */
+  var subscribeFired = false;
+
+  /* Subscribe fires only on manual Join button click */
   btn.addEventListener("click", function(){
 
-    if(window.fbq){
+    if(subscribeFired) return;
+
+    subscribeFired = true;
+
+    if(typeof window.fbq === "function"){
       fbq('track', 'Subscribe', {
         content_name: 'Haji Salman Memon Telegram Community'
       });
@@ -359,7 +366,7 @@ src="https://www.facebook.com/tr?id=1597186881864780&ev=PageView&noscript=1"/>
 
   });
 
-  /* 30-second redirect countdown */
+  /* Automatic redirect - DOES NOT fire Subscribe */
   var t = setInterval(function(){
 
     time--;
@@ -367,6 +374,8 @@ src="https://www.facebook.com/tr?id=1597186881864780&ev=PageView&noscript=1"/>
 
     if(time <= 0){
       clearInterval(t);
+
+      /* Direct redirect only; no Subscribe event here */
       window.location.href = link;
     }
 
