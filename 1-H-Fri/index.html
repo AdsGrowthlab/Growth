@@ -16,20 +16,23 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4190454951260140');
-fbq('track', 'PageView');
+
+fbq('init','4190454951260140');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4190454951260140&ev=PageView&noscript=1"
-/></noscript>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4190454951260140&amp;ev=PageView&amp;noscript=1"
+alt="">
+</noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
 :root{
   --bg:#031711;
-  --card:#103329;
   --line:#1b5b49;
   --green:#00d6a0;
   --orange:#ff9a45;
@@ -164,7 +167,7 @@ h1{
   line-height:1.3;
 }
 
-/* TELEGRAM CTA */
+/* TELEGRAM BUTTON */
 .cta{
   display:flex;
   flex-direction:column;
@@ -181,12 +184,7 @@ h1{
   box-shadow:
     0 0 0 12px #239fd812,
     0 0 28px #239fd82e;
-  transition:opacity .2s,transform .2s;
   -webkit-tap-highlight-color:transparent;
-}
-
-.cta:active{
-  transform:scale(.98);
 }
 
 .cta-main{
@@ -251,11 +249,11 @@ h1{
   line-height:1.5;
 }
 
-/* AD MANAGEMENT */
+/* AGENCY */
 .ad-management{
   margin-top:4px;
-  font-size:13px;
-  opacity:.85;
+  font-size:12px;
+  opacity:.9;
   text-align:center;
 }
 
@@ -267,14 +265,8 @@ h1{
 
 /* SMALL SCREENS */
 @media(max-height:700px){
-  .page{
-    gap:10px;
-    padding:10px 15px;
-  }
-  .profile{
-    width:78px;
-    height:78px;
-  }
+  .page{gap:10px;padding:10px 15px}
+  .profile{width:78px;height:78px}
   .stat{padding:9px 4px}
   .cta{min-height:53px;padding:8px}
   .benefit{min-height:43px;padding:8px 12px}
@@ -282,10 +274,7 @@ h1{
 
 @media(max-height:540px){
   .page{gap:6px}
-  .profile{
-    width:60px;
-    height:60px;
-  }
+  .profile{width:60px;height:60px}
   h1{font-size:23px}
   .urdu{font-size:13px}
   .stat{padding:6px 3px}
@@ -294,9 +283,7 @@ h1{
 }
 
 @media(max-height:430px){
-  .section-title,.benefit:last-child{
-    display:none;
-  }
+  .section-title,.benefit:last-child{display:none}
   .profile{width:46px;height:46px}
 }
 </style>
@@ -347,7 +334,7 @@ h1{
     </div>
   </section>
 
-  <!-- TELEGRAM BUTTON -->
+  <!-- TELEGRAM CTA -->
   <a
     class="cta"
     id="join"
@@ -394,55 +381,45 @@ h1{
   </p>
 
   <!-- AD MANAGEMENT -->
- <div style="text-align:center;font-family:Arial;margin:14px 0">
-  <div style="font-size:12px;color:#9aaab3;margin-bottom:12px">
-    Advertised by <b style="color:#d5e1e8">Growix Ad Agency
+  <div class="ad-management">
+    🚀 Ads Managed by
+    <a
+      href="https://t.me/GrowixAds"
+      target="_blank"
+      rel="noopener noreferrer"
+    >@GrowixAds</a>
   </div>
-  <a href="https://t.me/GrowixAds" target="_blank" rel="noopener"
-  style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid #168db3;border-radius:30px;background:#102b37;color:#d8edf5;text-decoration:none;font-size:13px;font-weight:600">
-  <span style="color:#35bde7">➤</span> @GrowixAds
-  </a>
-</div>
 
 </main>
 
+<!-- SUBSCRIBE: MAXIMUM ONE EVENT PER PAGE LOAD -->
 <script>
 (function(){
 
   const join = document.getElementById("join");
+
   if(!join) return;
 
-  let alreadyClicked = false;
+  // Reset automatically on every fresh page load.
+  let subscribeSent = false;
 
-  // Check whether Subscribe was already tracked in this browser session
-  try {
-    alreadyClicked = sessionStorage.getItem("telegram_subscribe_tracked") === "1";
-  } catch(e) {}
+  join.addEventListener("click",function(){
 
-  join.addEventListener("click", function(e){
+    // Never prevent navigation.
+    // Telegram remains accessible on every click.
 
-    // Prevent repeated clicks from firing additional Subscribe events
-    if(alreadyClicked){
-      e.preventDefault();
-      return;
-    }
+    if(subscribeSent) return;
 
-    // Lock immediately to stop rapid repeated clicks
-    alreadyClicked = true;
+    // Mark first to prevent rapid repeated clicks.
+    subscribeSent = true;
 
-    try {
-      sessionStorage.setItem("telegram_subscribe_tracked","1");
-    } catch(e) {}
-
-    // Track only the first click in this session
     if(typeof window.fbq === "function"){
       window.fbq("track","Subscribe",{
-        content_name:"Telegram Community",
+        content_name:"Haji Salman Memon",
         content_category:"Telegram CTA Click"
       });
     }
 
-    // Allow the original Telegram link to open normally
   });
 
 })();
