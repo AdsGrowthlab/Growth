@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HAJI SALMAN MEMON | Halal Market Updates</title>
+<meta name="description" content="Shariah-focused stock market learning and halal market updates with Haji Salman Memon.">
+<meta name="theme-color" content="#102b43">
 
-<title>SALMAN MEMON | Market Education</title>
-<meta name="theme-color" content="#031711">
-
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code: ONE init + ONE PageView -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,410 +17,203 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-
 fbq('init','4190454951260140');
 fbq('track','PageView');
 </script>
-
 <noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4190454951260140&amp;ev=PageView&amp;noscript=1"
-alt="">
+<img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=4190454951260140&ev=PageView&noscript=1">
 </noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
-:root{
-  --bg:#031711;
-  --line:#1b5b49;
-  --green:#00d6a0;
-  --orange:#ff9a45;
-  --blue:#239fd8;
-}
-
 *{box-sizing:border-box}
-
-html,body{
-  margin:0;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-}
-
+html{min-height:100%;background:#0a2340}
 body{
-  font-family:Arial,system-ui,sans-serif;
-  color:#fff;
-  background:var(--bg);
+  margin:0; min-height:100vh; padding:35px 14px;
+  display:flex; align-items:center; justify-content:center;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#10243c;
+  background:linear-gradient(155deg,#293b3f 0%,#142f45 48%,#071d3b 100%);
 }
-
-.page{
-  position:relative;
-  width:100%;
-  max-width:500px;
-  height:100vh;
-  height:100dvh;
-  margin:auto;
-  overflow:hidden;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:clamp(12px,2.5vh,24px);
-  padding:18px;
+.card{
+  position:relative; width:100%; max-width:400px;
+  padding:14px 14px 18px; overflow:hidden;
+  background:#fffdf7; border-radius:18px;
+  box-shadow:0 18px 40px rgba(0,0,0,.28);
   text-align:center;
-  background:
-    radial-gradient(circle at 50% 15%,#10453655,transparent 48%),
-    repeating-linear-gradient(
-      45deg,
-      transparent 0 39px,
-      #0c34291c 40px 41px,
-      transparent 42px 80px
-    ),
-    var(--bg);
 }
-
-/* PROFILE */
-.profile{
-  width:112px;
-  height:112px;
-  margin:0 auto;
-  padding:5px;
-  border-radius:50%;
-  border:3px solid var(--orange);
-  background:#174437;
-  box-shadow:0 0 0 6px #ff9a4512;
-  flex-shrink:0;
+.band{position:absolute;top:0;left:0;width:100%;height:4px;
+  display:flex;background:#e0b51c}
+.band i:first-child{width:50%;background:#e0b51c}
+.band i:last-child{width:50%;background:#102d55}
+.logo{
+  width:108px;height:108px;margin:0 auto 7px;padding:4px;
+  border:2px solid #d9ad19;border-radius:50%;
+  background:#fff;box-shadow:0 7px 15px rgba(0,0,0,.18);
 }
-
-.profile-inner{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  overflow:hidden;
-  background:linear-gradient(145deg,#1e5846,#09291f);
+.logo img{width:100%;height:100%;display:block;object-fit:cover;border-radius:50%}
+.namaskara{
+  display:inline-block;margin:0 auto 8px;padding:5px 14px;
+  border-radius:20px;background:#fbf2d9;color:#916300;
+  font-size:13px;font-weight:700;
 }
-
-.profile-inner img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+h1{margin:0 0 7px;font-size:24px;line-height:1.15;
+  font-weight:800;letter-spacing:-.6px;color:#071d3a}
+h1 span{color:#123c6c}
+.kn{margin:0 0 5px;color:#956700;font-size:18px;line-height:1.5}
+.sub{margin:0 0 14px;color:#53647c;font-size:13px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0 4px 13px}
+.tile{
+  min-height:82px;padding:9px 4px 7px;border:1px solid #e9dfc8;
+  border-top:3px solid #d6a313;border-radius:12px;background:#fffefa;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
 }
-
-.pill{
-  align-self:center;
-  padding:7px 15px;
-  border-radius:30px;
-  background:#063e2e;
-  border:1px solid #087b59;
-  color:var(--green);
-  font-size:11px;
-  font-weight:800;
-}
-
-h1{
-  margin:0;
-  font-size:clamp(27px,7.5vw,35px);
-  font-weight:900;
-  letter-spacing:-.7px;
-}
-
-.subtitle{
-  margin:-7px 0 0;
-  color:#9fd2bd;
-  font-size:clamp(12px,3.3vw,15px);
-}
-
-.urdu{
-  margin:-7px 0 0;
-  color:#c9e3d5;
-  font-size:17px;
-  direction:rtl;
-}
-
-/* HIGHLIGHTS */
-.stats{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:8px;
-}
-
-.stat{
-  padding:14px 5px;
-  background:linear-gradient(145deg,#123b2f,#0b291f);
-  border:1px solid var(--line);
-  border-radius:14px;
-}
-
-.stat strong{
-  display:block;
-  color:var(--orange);
-  font-size:clamp(12px,3.5vw,15px);
-  font-weight:900;
-}
-
-.stat small{
-  display:block;
-  margin-top:7px;
-  color:#a7c6b7;
-  font-size:clamp(9px,2.5vw,11px);
-  line-height:1.3;
-}
-
-/* TELEGRAM BUTTON */
+.ic{font-size:21px;line-height:1.2;margin-bottom:4px}
+.tile b{font-size:12px;line-height:1.25;color:#071d3a}
+.tile small{font-size:10px;color:#647086;margin-top:3px;white-space:nowrap}
 .cta{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:4px;
-  width:100%;
-  min-height:67px;
-  padding:12px;
-  border-radius:50px;
-  background:var(--blue);
-  color:white;
-  text-decoration:none;
-  box-shadow:
-    0 0 0 12px #239fd812,
-    0 0 28px #239fd82e;
-  -webkit-tap-highlight-color:transparent;
+  min-height:53px;width:100%;display:flex;align-items:center;justify-content:center;
+  gap:12px;padding:12px 10px;border-radius:13px;
+  background:linear-gradient(100deg,#1b4d83,#092344);
+  color:#fff;text-decoration:none;font-size:16px;font-weight:800;
+  box-shadow:0 9px 16px rgba(10,37,68,.30),0 2px 0 #163e68;
 }
-
-.cta-main{
-  display:flex;
-  align-items:center;
-  gap:9px;
-  font-size:clamp(15px,4.5vw,19px);
-  font-weight:900;
-}
-
-.cta svg{
-  width:23px;
-  height:23px;
-  fill:currentColor;
-}
-
-.cta small{
-  font-size:11px;
-  font-weight:600;
-}
-
-/* LEARNING LIST */
-.section-title{
-  text-align:left;
-  color:#91b5a5;
-  font-size:10px;
-  letter-spacing:1px;
-}
-
-.benefits{
-  display:flex;
-  flex-direction:column;
-  gap:9px;
-}
-
-.benefit{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  min-height:56px;
-  padding:12px 15px;
-  border-radius:13px;
-  background:linear-gradient(100deg,#12392e,#0b291f);
-  border:1px solid var(--line);
-  text-align:left;
-  font-size:clamp(11px,3vw,13px);
-  font-weight:750;
-}
-
-.dot{
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:var(--orange);
-  flex-shrink:0;
-}
-
-.disclaimer{
-  margin:0;
-  color:#8ca99b;
-  font-size:9px;
-  line-height:1.5;
-}
-
-/* AGENCY */
-.ad-management{
-  margin-top:4px;
-  font-size:12px;
-  opacity:.9;
-  text-align:center;
-}
-
-.ad-management a{
-  color:#d4af37;
-  font-weight:bold;
-  text-decoration:none;
-}
-
-/* SMALL SCREENS */
-@media(max-height:700px){
-  .page{gap:10px;padding:10px 15px}
-  .profile{width:78px;height:78px}
-  .stat{padding:9px 4px}
-  .cta{min-height:53px;padding:8px}
-  .benefit{min-height:43px;padding:8px 12px}
-}
-
-@media(max-height:540px){
-  .page{gap:6px}
-  .profile{width:60px;height:60px}
-  h1{font-size:23px}
-  .urdu{font-size:13px}
-  .stat{padding:6px 3px}
-  .benefit{min-height:35px;padding:6px 10px}
-  .cta{min-height:45px}
-}
-
-@media(max-height:430px){
-  .section-title,.benefit:last-child{display:none}
-  .profile{width:46px;height:46px}
+.cta svg{width:23px;height:23px;flex:0 0 23px}
+.cta:active{transform:translateY(1px)}
+.free{margin:10px 0 12px;color:#53647c;font-size:12px}
+.free b{color:#19834e}
+hr{border:0;border-top:1px solid #e8dfcf;margin:0 0 10px}
+.disc{margin:0 4px 8px;color:#7a6b5c;font-size:11px;line-height:1.55}
+.disc b{color:#6e321d}
+.links{margin:0;color:#6f6a65;font-size:11px}
+.links a{color:#6f6a65;text-decoration:none}
+.links a:hover{text-decoration:underline}
+.ur{font-family:Arial,sans-serif}
+[hidden]{display:none!important}
+.modal{position:fixed;inset:0;z-index:20;background:rgba(3,14,28,.72);
+  display:flex;align-items:center;justify-content:center;padding:18px}
+.mbox{position:relative;width:100%;max-width:420px;max-height:85vh;overflow:auto;
+  background:#fffdf7;border-radius:15px;padding:22px;text-align:left;color:#24364a}
+.mbox h2{margin:0 0 4px;font-size:21px}
+.mbox h3{margin:16px 0 5px;font-size:14px}
+.mbox p{font-size:13px;line-height:1.5;margin:0}
+.mbox small{color:#777}
+.mbox a{color:#174d80}
+.mclose{position:absolute;right:12px;top:10px;border:0;background:none;
+  font-size:22px;cursor:pointer;color:#34465a}
+@media(max-width:360px){
+ body{padding:18px 10px}
+ .card{padding:13px 11px 16px}
+ h1{font-size:22px}
+ .tiles{gap:6px;margin-left:0;margin-right:0}
+ .tile b{font-size:11px}
+ .tile small{font-size:9px}
+ .cta{font-size:14px}
 }
 </style>
 </head>
-
 <body>
 
-<main class="page">
+<main class="card">
+  <div class="band"><i></i><i></i></div>
 
-  <!-- PROFILE PHOTO -->
-  <div class="profile">
-    <div class="profile-inner">
-      <img
-        src="https://tamilharmonic.online/ravisalman/profile.webp"
-        alt="Haji Salman Memon"
-      >
+  <div class="logo">
+    <img src="data:image/jpeg;base64,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" alt="Haji Salman Memon">
+  </div>
+
+  <div class="namaskara">☪️ Assalamu Alaikum</div>
+
+  <h1>HAJI SALMAN <span>MEMON</span></h1>
+
+  <p class="kn" lang="ur" dir="rtl">حلال طریقے سے شیئر مارکیٹ سیکھیں</p>
+  <p class="sub">Shariah-focused learning · Hinglish &amp; English</p>
+
+  <div class="tiles">
+    <div class="tile">
+      <span class="ic">🕌</span>
+      <b>Halal Screening</b>
+      <small>Basics samjhein</small>
+    </div>
+    <div class="tile">
+      <span class="ic">📊</span>
+      <b>Chart Basics</b>
+      <small>Easy &amp; simple</small>
+    </div>
+    <div class="tile">
+      <span class="ic">⚖️</span>
+      <b>Ethical Investing</b>
+      <small>Interest-free focus</small>
     </div>
   </div>
 
-  <div class="pill">
-    FREE EDUCATIONAL COMMUNITY
-  </div>
-
-  <h1>HAJI SALMAN MEMON</h1>
-
-  <p class="subtitle">
-    Market Learning &amp; Educational Updates
-  </p>
-
-  <p class="urdu" lang="ur">
-    مارکیٹ کو سمجھیں، علم میں اضافہ کریں
-  </p>
-
-  <section class="stats">
-    <div class="stat">
-      <strong>100% Free</strong>
-      <small>Free Community</small>
-    </div>
-
-    <div class="stat">
-      <strong>Learn</strong>
-      <small>Market Concepts</small>
-    </div>
-
-    <div class="stat">
-      <strong>Explore</strong>
-      <small>Financial Awareness</small>
-    </div>
-  </section>
-
-  <!-- TELEGRAM CTA -->
-  <a
-    class="cta"
-    id="join"
-    href="https://t.me/+1qW6t7zzoiI5NGRl"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span class="cta-main">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M21.5 3.5 2.9 10.7c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.5c.2.7.1 1 .9.9.7 0 1-.3 1.4-.7l2.3-2.2 4.8 3.5c.9.5 1.5.3 1.7-.9l3-14.5c.4-1.5-.6-2.1-2-1.5ZM9 13.3l10-6.4c.5-.3.9-.1.5.3l-8.2 7.5-.3 3.3-2-4.7Z"/>
-      </svg>
-      Join Telegram Channel
-    </span>
-
-    <small lang="ur">
-      مفت تعلیمی کمیونٹی میں شامل ہوں
-    </small>
+  <a id="telegramJoin" class="cta" href="https://t.me/+1qW6t7zzoiI5NGRl" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="12" fill="#fff"/>
+      <path d="M5.5 11.8l11.6-4.5c.5-.2 1 .1.8.9l-2 9.3c-.1.6-.5.8-1 .5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5.1c.2-.2 0-.3-.4-.1l-6.9 4.4-3-.9c-.6-.2-.6-.6.1-.9z" fill="#13315c"/>
+    </svg>
+    JOIN FREE TELEGRAM CHANNEL
   </a>
 
-  <div class="section-title">
-    WHY JOIN US? / کیوں شامل ہوں؟
-  </div>
+  <p class="free">✅ <b>Bilkul Free</b> · <span lang="ur" dir="rtl">بالکل مفت</span></p>
 
-  <section class="benefits">
-    <div class="benefit">
-      <span class="dot"></span>
-      Educational Market Insights
-    </div>
-
-    <div class="benefit">
-      <span class="dot"></span>
-      Chart Reading &amp; Market Basics
-    </div>
-
-    <div class="benefit">
-      <span class="dot"></span>
-      Risk Management &amp; Trading Discipline
-    </div>
-  </section>
-
-  <p class="disclaimer">
-    Educational purposes only. Not financial advice.
-    Trading involves risk. No guaranteed returns.
+  <hr>
+  <p class="disc"><b>Disclaimer:</b> This channel shares stock market education only. We do not give buy/sell recommendations, tips or signals and are not SEBI registered. Investing involves risk. Shariah views on specific stocks can differ; please consult a qualified scholar and do your own research.</p>
+  <p class="links">
+    <a href="#" id="openPrivacy">Privacy Policy</a> ·
+    <a href="mailto:shariahalaaltrader.help@gmail.com">Contact</a>
   </p>
-
-  <!-- AD MANAGEMENT -->
-  <div class="ad-management">
-    🚀 Ads Managed by
-    <a
-      href="https://t.me/GrowixAds"
-      target="_blank"
-      rel="noopener noreferrer"
-    >@GrowixAds</a>
-  </div>
-
 </main>
 
-<!-- SUBSCRIBE: MAXIMUM ONE EVENT PER PAGE LOAD -->
+<div class="modal" id="privacy" role="dialog" aria-modal="true" aria-labelledby="ppTitle" hidden>
+  <div class="mbox">
+    <button class="mclose" id="closePrivacy" aria-label="Close">✕</button>
+    <h2 id="ppTitle">Privacy Policy</h2>
+    <small>Last updated: November 2026</small>
+    <h3>Who we are</h3>
+    <p>Haji Salman Memon shares stock market education with a Shariah-focused approach.</p>
+    <h3>What we collect</h3>
+    <p>This website uses Meta Pixel for advertising measurement. Meta may collect technical information such as browser, device and page activity according to its privacy policy.</p>
+    <h3>Third parties</h3>
+    <p>Meta: <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a>. Telegram's privacy policy applies when you visit or join Telegram.</p>
+    <h3>Not financial advice</h3>
+    <p>All content is for educational purposes only. We do not provide investment advice or guarantee returns.</p>
+    <h3>Contact</h3>
+    <p><a href="mailto:shariahalaaltrader.help@gmail.com">shariahalaaltrader.help@gmail.com</a></p>
+  </div>
+</div>
+
 <script>
-(function(){
+(function() {
+  const privacy = document.getElementById('privacy');
+  const openPrivacy = document.getElementById('openPrivacy');
+  const closePrivacy = document.getElementById('closePrivacy');
+  const joinButton = document.getElementById('telegramJoin');
 
-  const join = document.getElementById("join");
-
-  if(!join) return;
-
-  // Reset automatically on every fresh page load.
-  let subscribeSent = false;
-
-  join.addEventListener("click",function(){
-
-    // Never prevent navigation.
-    // Telegram remains accessible on every click.
-
-    if(subscribeSent) return;
-
-    // Mark first to prevent rapid repeated clicks.
-    subscribeSent = true;
-
-    if(typeof window.fbq === "function"){
-      window.fbq("track","Subscribe",{
-        content_name:"Haji Salman Memon",
-        content_category:"Telegram CTA Click"
-      });
-    }
-
+  openPrivacy.addEventListener('click', function(event) {
+    event.preventDefault();
+    privacy.hidden = false;
   });
 
+  closePrivacy.addEventListener('click', function() {
+    privacy.hidden = true;
+  });
+
+  privacy.addEventListener('click', function(event) {
+    if (event.target === privacy) privacy.hidden = true;
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') privacy.hidden = true;
+  });
+
+  // Track only a real tap/click on the Telegram button.
+  // This records a CTA click, not a confirmed Telegram channel join.
+  joinButton.addEventListener('click', function() {
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'Subscribe');
+    }
+  });
 })();
 </script>
 
