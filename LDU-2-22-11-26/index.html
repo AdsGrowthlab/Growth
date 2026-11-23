@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,25 +5,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#061b17">
 <meta name="description" content="Islamic Stock Market - Shariah-conscious market education in English and Urdu.">
+
 <title>Islamic Stock Market | Learning Community</title>
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1181048754606512');
-fbq('track', 'PageView');
+{if(f.fbq)return;n=f.fbq=function()
+n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1181048754606512');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1181048754606512&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1181048754606512&ev=PageView&noscript=1">
+</noscript>
+
 <style>
 :root{
   --bg:#061b17;
@@ -32,18 +40,22 @@ src="https://www.facebook.com/tr?id=1181048754606512&ev=PageView&noscript=1"
   --ivory:#f8f3e7;
   --muted:#b5c8bf;
 }
+
 *{box-sizing:border-box}
+
 html,body{
   margin:0;
   width:100%;
   height:100%;
   overflow:hidden;
 }
+
 body{
   background:var(--bg);
   color:var(--ivory);
   font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
 }
+
 .page{
   position:relative;
   isolation:isolate;
@@ -66,6 +78,7 @@ body{
     radial-gradient(ellipse at 50% 13%,#1e594355,transparent 48%),
     linear-gradient(160deg,#061b17,#09251f 65%,#041510);
 }
+
 .page:before{
   content:"";
   position:absolute;
@@ -78,6 +91,7 @@ body{
   background-size:75px 75px;
   mask-image:linear-gradient(to bottom,#000,transparent 65%);
 }
+
 .topline{
   align-self:center;
   border:1px solid #d6b77b70;
@@ -89,7 +103,7 @@ body{
   letter-spacing:.6px;
 }
 
-/* PROFILE PHOTO */
+/* Profile Photo */
 .photo-ring{
   width:clamp(100px,29vw,136px);
   height:clamp(100px,29vw,136px);
@@ -102,6 +116,7 @@ body{
     0 0 0 7px #d6b77b12,
     0 0 32px #d6b77b28;
 }
+
 .photo-inner{
   position:relative;
   width:100%;
@@ -110,6 +125,7 @@ body{
   border-radius:50%;
   background:linear-gradient(145deg,#195342,#08271f);
 }
+
 .photo-inner img{
   display:block;
   width:100%;
@@ -117,6 +133,7 @@ body{
   object-fit:cover;
   object-position:center;
 }
+
 .photo-fallback{
   display:none;
   width:100%;
@@ -127,7 +144,7 @@ body{
   font-weight:950;
 }
 
-/* TEXT */
+/* Text */
 h1{
   margin:0;
   font-size:clamp(26px,7.5vw,38px);
@@ -135,16 +152,19 @@ h1{
   font-weight:950;
   letter-spacing:-.8px;
 }
+
 h1 span{
   display:block;
   color:var(--gold);
 }
+
 .sub{
   margin:-6px 0 0;
   font-size:clamp(11px,3vw,14px);
   color:var(--muted);
   line-height:1.5;
 }
+
 .urdu{
   margin:0;
   font-size:clamp(17px,5vw,23px);
@@ -153,12 +173,13 @@ h1 span{
   direction:rtl;
 }
 
-/* LEARNING POINTS */
+/* Learning Points */
 .learning{
   display:flex;
   flex-direction:column;
   gap:10px;
 }
+
 .learn{
   display:flex;
   align-items:center;
@@ -169,6 +190,7 @@ h1 span{
   border:1px solid #d6b77b35;
   text-align:left;
 }
+
 .learn-icon{
   width:32px;
   height:32px;
@@ -180,10 +202,12 @@ h1 span{
   color:var(--gold);
   font-size:16px;
 }
+
 .learn strong{
   display:block;
   font-size:clamp(11px,3vw,13px);
 }
+
 .learn small{
   display:block;
   margin-top:4px;
@@ -191,7 +215,7 @@ h1 span{
   color:var(--muted);
 }
 
-/* CTA */
+/* Telegram CTA */
 .cta{
   display:flex;
   align-items:center;
@@ -209,22 +233,31 @@ h1 span{
   box-shadow:
     0 0 0 6px #d6b77b10,
     0 0 28px #d6b77b32;
+  -webkit-tap-highlight-color:transparent;
 }
+
 .cta svg{
   width:22px;
   height:22px;
   fill:currentColor;
   flex-shrink:0;
 }
+
 .cta span{
   display:flex;
   flex-direction:column;
   gap:4px;
 }
+
 .cta small{
   font-size:clamp(10px,2.6vw,12px);
   font-weight:600;
 }
+
+.cta.clicked{
+  opacity:.85;
+}
+
 .disclaimer{
   margin:0;
   color:#9cb3a8;
@@ -232,14 +265,49 @@ h1 span{
   line-height:1.5;
 }
 
-/* SHORT MOBILE SCREENS */
+/* Advertiser section */
+.advertiser{
+  text-align:center;
+  font-family:Arial,sans-serif;
+  margin:8px 0;
+}
+
+.advertiser-text{
+  font-size:12px;
+  color:#9aaab3;
+  margin-bottom:10px;
+}
+
+.advertiser-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 20px;
+  border:1px solid #168db3;
+  border-radius:30px;
+  background:#102b37;
+  color:#d8edf5;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* Short Mobile Screens */
 @media(max-height:700px){
-  .page{gap:8px;padding-top:8px;padding-bottom:8px}
-  .photo-ring{width:83px;height:83px}
+  .page{
+    gap:8px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+  .photo-ring{
+    width:83px;
+    height:83px;
+  }
   h1{font-size:27px}
   .learn{padding:9px}
   .cta{min-height:48px;padding:9px}
 }
+
 @media(max-height:550px){
   .page{gap:5px}
   .photo-ring{width:62px;height:62px}
@@ -249,6 +317,7 @@ h1 span{
   .learn-icon{width:24px;height:24px}
   .cta{min-height:43px}
 }
+
 @media(max-height:430px){
   .sub{display:none}
   .learn:last-child{display:none}
@@ -257,13 +326,14 @@ h1 span{
 </head>
 
 <body>
+
 <main class="page">
 
   <div class="topline">
     FREE EDUCATIONAL COMMUNITY
   </div>
 
-  <!-- ADD YOUR PROFILE PHOTO URL HERE -->
+  <!-- Profile Photo -->
   <div class="photo-ring">
     <div class="photo-inner">
       <img
@@ -277,7 +347,7 @@ h1 span{
 
   <h1>
     REHAN AHMED SHAIKH 🕋
-    <span>(SHARIAH COMPLAINTS HALAL STOCKS TRADER)</span>
+    <span>(SHARIAH COMPLIANT HALAL STOCKS TRADER)</span>
   </h1>
 
   <p class="sub">
@@ -316,6 +386,7 @@ h1 span{
 
   </section>
 
+  <!-- Telegram Join Button -->
   <a
     class="cta"
     id="join"
@@ -326,40 +397,72 @@ h1 span{
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M21.5 3.5 2.9 10.7c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.5c.2.7.1 1 .9.9.7 0 1-.3 1.4-.7l2.3-2.2 4.8 3.5c.9.5 1.5.3 1.7-.9l3-14.5c.4-1.5-.6-2.1-2-1.5ZM9 13.3l10-6.4c.5-.3.9-.1.5.3l-8.2 7.5-.3 3.3-2-4.7Z"/>
     </svg>
+
     <span>
       JOIN FREE TELEGRAM CHANNEL
       <small lang="ur">مفت تعلیمی چینل میں شامل ہوں</small>
     </span>
   </a>
-  <div style="text-align:center;font-family:Arial;margin:14px 0">
-  <div style="font-size:12px;color:#9aaab3;margin-bottom:12px">
-    Advertised by <b style="color:#d5e1e8">Growix Ad Agency</b>
-  </div>
-  <a href="https://t.me/GrowixAds" target="_blank" rel="noopener"
-  style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid #168db3;border-radius:30px;background:#102b37;color:#d8edf5;text-decoration:none;font-size:13px;font-weight:600">
-  <span style="color:#35bde7">➤</span> @GrowixAds
-  </a>
-</div>
 
+  <!-- Advertiser -->
+  <div class="advertiser">
+    <div class="advertiser-text">
+      Advertised by <b style="color:#d5e1e8">Growix Ad Agency</b>
+    </div>
+
+    <a
+      href="https://t.me/GrowixAds"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="advertiser-link"
+    >
+      <span style="color:#35bde7">➤</span> @GrowixAds
+    </a>
+  </div>
 
   <p class="disclaimer">
-    Educational purposes only. Not financial or religious advice.
-    Shariah compliance requires independent verification.
+    Educational purposes only. Not financial or religious advice.<br>
+    Shariah compliance requires independent verification.<br>
     Investing involves risk; no guaranteed returns.
   </p>
 
 </main>
 
+<!-- Single Subscribe Click Handler -->
 <script>
-document.getElementById('join')
-.addEventListener('click',function(){
-  if(typeof window.fbq==='function'){
-    window.fbq('track','Subscribe',{
-      content_name:'Islamic Stock Market',
-      content_category:'Telegram CTA Click'
-    });
-  }
-});
+(function(){
+  const joinBtn = document.getElementById('join');
+  if(!joinBtn) return;
+
+  let alreadyClicked = false;
+
+  joinBtn.addEventListener('click',function(event){
+
+    /* Ignore synthetic/programmatic clicks */
+    if(!event.isTrusted) return;
+
+    /* Prevent repeat tracking and repeated button action */
+    if(alreadyClicked){
+      event.preventDefault();
+      return;
+    }
+
+    alreadyClicked = true;
+
+    /* Track only one Subscribe event */
+    if(typeof window.fbq === 'function'){
+      window.fbq('track','Subscribe',{
+        content_name:'Islamic Stock Market',
+        content_category:'Telegram CTA Click'
+      });
+    }
+
+    /* Lock the button after first genuine click */
+    joinBtn.classList.add('clicked');
+    joinBtn.style.pointerEvents='none';
+
+  },{passive:false});
+})();
 </script>
 
 </body>
