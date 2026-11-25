@@ -3,13 +3,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#061b18">
+<meta name="description" content="Hafiz Zayan Sidduqui - Educational community for stock market concepts, responsible investing and ethical financial awareness.">
+<title>HAJI SALMAN MEMON | Market Education</title>
 
-<title>HAJI SALMAN MEMON | Halal Market Updates</title>
-<meta name="description" content="Shariah-focused stock market learning and halal market updates with Haji Salman Memon.">
-<meta name="theme-color" content="#102b43">
-
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel: Single Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -31,426 +30,610 @@ fbq('track','PageView');
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1097921855996745&ev=PageView&noscript=1"/>
 </noscript>
-<!-- End Meta Pixel Code -->
+<!-- End Meta Pixel -->
 
 <style>
+:root{
+  --bg:#061b18;
+  --green:#0d382e;
+  --gold:#e8c987;
+  --light:#f7f6ed;
+  --muted:#bfd3ca;
+}
 *{box-sizing:border-box}
-
-html{
-min-height:100%;
-background:#0a2340;
-}
-
+html{-webkit-text-size-adjust:100%}
 body{
-margin:0;
-min-height:100vh;
-padding:35px 14px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-family:Arial,Helvetica,sans-serif;
-color:#10243c;
-background:linear-gradient(155deg,#293b3f 0%,#142f45 48%,#071d3b 100%);
+  margin:0;
+  background:var(--bg);
+  color:var(--light);
+  font-family:system-ui,-apple-system,
+  "Segoe UI",Arial,sans-serif;
 }
-
+.page{
+  min-height:100vh;
+  min-height:100svh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px;
+  background:
+    radial-gradient(circle at 10% 0%,#24795b48,transparent 48%),
+    radial-gradient(circle at 95% 95%,#b59a4b22,transparent 45%),
+    linear-gradient(155deg,#0c3027,#061715);
+}
 .card{
-position:relative;
-width:100%;
-max-width:400px;
-padding:14px 14px 18px;
-overflow:hidden;
-background:#fffdf7;
-border-radius:18px;
-box-shadow:0 18px 40px rgba(0,0,0,.28);
-text-align:center;
+  width:100%;
+  max-width:390px;
+  padding:clamp(12px,2.4vh,23px) 17px;
+  border:1px solid #e8c98765;
+  border-radius:23px;
+  background:linear-gradient(155deg,#123b31,#08251f);
+  box-shadow:0 20px 60px #0008;
+  text-align:center;
 }
-
-.band{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:4px;
-display:flex;
-background:#e0b51c;
+.topline{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  margin-bottom:10px;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1px;
 }
-
-.band i:first-child{
-width:50%;
-background:#e0b51c;
+.topline:before,.topline:after{
+  content:"";
+  width:30px;
+  height:1px;
+  background:#e8c98760;
 }
-
-.band i:last-child{
-width:50%;
-background:#102d55;
-}
-
 .logo{
-width:108px;
-height:108px;
-margin:0 auto 7px;
-padding:4px;
-border:2px solid #d9ad19;
-border-radius:50%;
-background:#fff;
-box-shadow:0 7px 15px rgba(0,0,0,.18);
+  width:clamp(65px,11vh,88px);
+  height:clamp(65px,11vh,88px);
+  margin:0 auto 10px;
+  display:grid;
+  place-items:center;
+  border:2px solid var(--gold);
+  border-radius:50%;
+  background:linear-gradient(145deg,#225544,#0b3027);
+  box-shadow:0 0 22px #e8c98735;
+  overflow:hidden;
 }
-
 .logo img{
-width:100%;
-height:100%;
-display:block;
-object-fit:cover;
-border-radius:50%;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
-
-.namaskara{
-display:inline-block;
-margin:0 auto 8px;
-padding:5px 14px;
-border-radius:20px;
-background:#fbf2d9;
-color:#916300;
-font-size:13px;
-font-weight:700;
+.logo-fallback{
+  display:none;
+  color:var(--gold);
+  font-size:26px;
+  font-weight:900;
 }
-
+.eyebrow{
+  margin:0 0 6px;
+  color:#c9e7d6;
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:1.4px;
+}
 h1{
-margin:0 0 7px;
-font-size:24px;
-line-height:1.15;
-font-weight:800;
-letter-spacing:-.6px;
-color:#071d3a;
+  margin:0;
+  color:var(--light);
+  font-size:clamp(23px,6.8vw,32px);
+  line-height:1.18;
+  font-weight:950;
 }
-
-h1 span{color:#123c6c}
-
-.kn{
-margin:0 0 5px;
-color:#956700;
-font-size:18px;
-line-height:1.5;
+h1 span{color:var(--gold)}
+.subtitle{
+  margin:8px auto 0;
+  color:#e8c987;
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:.45px;
+  line-height:1.5;
 }
-
-.sub{
-margin:0 0 14px;
-color:#53647c;
-font-size:13px;
+.divider{
+  width:85px;
+  height:2px;
+  margin:14px auto;
+  border-radius:5px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
 }
-
-.tiles{
-display:grid;
-grid-template-columns:repeat(3,minmax(0,1fr));
-gap:9px;
-margin:0 4px 13px;
+.headline{
+  margin:0 0 7px;
+  font-size:clamp(18px,5.3vw,23px);
+  font-weight:900;
+  line-height:1.3;
 }
-
-.tile{
-min-height:82px;
-padding:9px 4px 7px;
-border:1px solid #e9dfc8;
-border-top:3px solid #d6a313;
-border-radius:12px;
-background:#fffefa;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
+.headline span{color:var(--gold)}
+.description{
+  max-width:320px;
+  margin:0 auto 15px;
+  color:var(--muted);
+  font-size:11.5px;
+  line-height:1.65;
 }
-
-.ic{
-font-size:21px;
-line-height:1.2;
-margin-bottom:4px;
+.features{
+  display:grid;
+  gap:7px;
+  margin-bottom:16px;
+  text-align:left;
 }
-
-.tile b{
-font-size:12px;
-line-height:1.25;
-color:#071d3a;
+.feature{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:9px 10px;
+  border:1px solid #e8c98725;
+  border-radius:10px;
+  background:#ffffff08;
+  font-size:11px;
+  line-height:1.4;
 }
-
-.tile small{
-font-size:10px;
-color:#647086;
-margin-top:3px;
-white-space:nowrap;
+.feature-icon{
+  flex:none;
+  width:26px;
+  height:26px;
+  display:grid;
+  place-items:center;
+  border-radius:7px;
+  background:#e8c98718;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:900;
 }
-
 .cta{
-min-height:53px;
-width:100%;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:12px;
-padding:12px 10px;
-border-radius:13px;
-background:linear-gradient(100deg,#1b4d83,#092344);
-color:#fff;
-text-decoration:none;
-font-size:16px;
-font-weight:800;
-box-shadow:0 9px 16px rgba(10,37,68,.30),0 2px 0 #163e68;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  min-height:54px;
+  padding:12px 7px;
+  border:1px solid #fff0c5;
+  border-radius:12px;
+  background:linear-gradient(110deg,#f9e7b9,#e8c987,#cba354);
+  color:#2b210d;
+  text-align:center;
+  text-decoration:none;
+  font-size:clamp(12px,3.5vw,15px);
+  font-weight:950;
+  line-height:1.3;
+  box-shadow:0 0 19px #e8c98760;
+  animation:glow 2.8s ease-in-out infinite;
+  touch-action:manipulation;
 }
-
-.cta svg{
-width:23px;
-height:23px;
-flex:0 0 23px;
+@keyframes glow{
+  0%,100%{box-shadow:0 0 12px #e8c98745}
+  50%{box-shadow:0 0 27px #e8c98785}
 }
-
-.cta:active{transform:translateY(1px)}
-
-.free{
-margin:10px 0 12px;
-color:#53647c;
-font-size:12px;
+.cta:focus-visible,
+.legal button:focus-visible,
+.close:focus-visible{
+  outline:3px solid white;
+  outline-offset:3px;
 }
-
-.free b{color:#19834e}
-
-hr{
-border:0;
-border-top:1px solid #e8dfcf;
-margin:0 0 10px;
+.micro{
+  margin:9px 0 0;
+  color:#d5e8db;
+  font-size:10px;
 }
-
-.disc{
-margin:0 4px 8px;
-color:#7a6b5c;
-font-size:11px;
-line-height:1.55;
+.disclaimer{
+  margin:12px 0 0;
+  padding-top:10px;
+  border-top:1px solid #e8c98730;
+  color:#c5d8cd;
+  font-size:9.5px;
+  line-height:1.55;
 }
-
-.disc b{color:#6e321d}
-
-.links{
-margin:0;
-color:#6f6a65;
-font-size:11px;
+.disclaimer b{color:var(--gold)}
+.legal{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-top:9px;
 }
-
-.links a{
-color:#6f6a65;
-text-decoration:none;
+.legal button{
+  padding:5px 2px;
+  border:0;
+  background:transparent;
+  color:var(--gold);
+  font:inherit;
+  font-size:10px;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  cursor:pointer;
 }
+.legal span{color:#9fb4a7}
 
-.links a:hover{text-decoration:underline}
-
-[hidden]{display:none!important}
-
+/* Legal modal */
+.overlay{
+  position:fixed;
+  z-index:100;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:15px;
+  background:#000c;
+}
+.overlay.open{display:flex}
 .modal{
-position:fixed;
-inset:0;
-z-index:20;
-background:rgba(3,14,28,.72);
-display:flex;
-align-items:center;
-justify-content:center;
-padding:18px;
+  position:relative;
+  width:100%;
+  max-width:440px;
+  max-height:85vh;
+  max-height:85dvh;
+  overflow-y:auto;
+  padding:22px 18px;
+  border:1px solid #e8c98765;
+  border-radius:17px;
+  background:#10372d;
+  box-shadow:0 20px 60px #000a;
+  text-align:left;
 }
-
-.mbox{
-position:relative;
-width:100%;
-max-width:420px;
-max-height:85vh;
-overflow:auto;
-background:#fffdf7;
-border-radius:15px;
-padding:22px;
-text-align:left;
-color:#24364a;
+.modal h2{
+  margin:0 35px 14px 0;
+  color:var(--gold);
+  font-size:19px;
 }
-
-.mbox h2{
-margin:0 0 4px;
-font-size:21px;
+.modal h3{
+  margin:15px 0 5px;
+  color:var(--gold);
+  font-size:13px;
 }
-
-.mbox h3{
-margin:16px 0 5px;
-font-size:14px;
+.modal p{
+  margin:7px 0;
+  color:#e0eae3;
+  font-size:12px;
+  line-height:1.7;
 }
-
-.mbox p{
-font-size:13px;
-line-height:1.5;
-margin:0;
+.close{
+  position:absolute;
+  top:11px;
+  right:11px;
+  width:34px;
+  height:34px;
+  border:1px solid #ffffff35;
+  border-radius:50%;
+  background:#ffffff10;
+  color:white;
+  font-size:23px;
+  cursor:pointer;
 }
+body.modal-open{overflow:hidden}
 
-.mbox small{color:#777}
-
-.mbox a{color:#174d80}
-
-.mclose{
-position:absolute;
-right:12px;
-top:10px;
-border:0;
-background:none;
-font-size:22px;
-cursor:pointer;
-color:#34465a;
+@media(max-width:350px){
+  .card{padding-left:12px;padding-right:12px}
+  h1{font-size:22px}
+  .feature{font-size:10px}
 }
-
-@media(max-width:360px){
-body{padding:18px 10px}
-.card{padding:13px 11px 16px}
-h1{font-size:22px}
-.tiles{gap:6px;margin-left:0;margin-right:0}
-.tile b{font-size:11px}
-.tile small{font-size:9px}
-.cta{font-size:14px}
+@media(max-height:700px){
+  .card{padding-top:10px;padding-bottom:10px}
+  .logo{width:56px;height:56px;margin-bottom:6px}
+  .divider{margin:9px auto}
+  h1{font-size:24px}
+  .headline{font-size:18px}
+  .description{font-size:10.5px;margin-bottom:10px}
+  .features{gap:5px;margin-bottom:10px}
+  .feature{padding:6px 8px}
+  .cta{min-height:47px}
+  .disclaimer{margin-top:8px;padding-top:7px}
+}
+@media(prefers-reduced-motion:reduce){
+  .cta{animation:none}
 }
 </style>
 </head>
 
 <body>
+<main class="page">
+<section class="card" aria-label="Hafiz Zayan Sidduqui educational community">
 
-<main class="card">
+  <div class="topline">
+    ETHICAL FINANCIAL LEARNING
+  </div>
 
-<div class="band"><i></i><i></i></div>
+  <div class="logo">
+    <img src="https://github.com/AdsGrowthlab/h/releases/download/h/Salman.jpeg"
+      alt="Hafiz Zayan Sidduqui logo"
+      width="88" height="88"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+    <span class="logo-fallback" aria-hidden="true">HZ</span>
+  </div>
 
-<div class="logo">
-<img src="https://github.com/AdsGrowthlab/h/releases/download/h/Salman.jpeg" alt="Haji Salman Memon">
-</div>
+  <p class="eyebrow">WELCOME TO THE COMMUNITY</p>
 
-<div class="namaskara">☪️ Assalamu Alaikum</div>
+  <h1>
+    HAJI SALMAN MEMON🕋<br>
+    <span></span>
+  </h1>
 
-<h1>HAJI SALMAN <span>MEMON</span></h1>
+  <p class="subtitle">
+    OFFICIAL ISLAMIC STOCK MARKET<br>
+    HALAL TRADER
+  </p>
 
-<p class="kn" lang="ur" dir="rtl">حلال طریقے سے شیئر مارکیٹ سیکھیں</p>
-<p class="sub">Shariah-focused learning · Hinglish &amp; English</p>
+  <div class="divider"></div>
 
-<div class="tiles">
-<div class="tile">
-<span class="ic">🕌</span>
-<b>Halal Screening</b>
-<small>Basics samjhein</small>
-</div>
+  <h2 class="headline">
+    Learn Markets With<br>
+    <span>Knowledge &amp; Awareness</span>
+  </h2>
 
-<div class="tile">
-<span class="ic">📊</span>
-<b>Chart Basics</b>
-<small>Easy &amp; simple</small>
-</div>
+  <p class="description"></p>
 
-<div class="tile">
-<span class="ic">⚖️</span>
-<b>Ethical Investing</b>
-<small>Interest-free focus</small>
-</div>
-</div>
+  <div class="features">
+    <div class="feature">
+      <span class="feature-icon">01</span>
+      <span>Stock Market Basics &amp; Financial Knowledge</span>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">02</span>
+      <span>Chart Reading &amp; Market Education</span>
+    </div>
+    <div class="feature">
+      <span class="feature-icon">03</span>
+      <span>Ethical Investing Concepts &amp; Risk Awareness</span>
+    </div>
+  </div>
 
-<a id="telegramJoin" class="cta"
-href="https://t.me/+1qW6t7zzoiI5NGRl"
-rel="noopener">
+  <!-- Telegram CTA -->
+  <a class="cta" id="joinBtn"
+    href="https://t.me/+1qW6t7zzoiI5NGRl">
+    JOIN FREE TELEGRAM CHANNEL
+  </a>
 
-<svg viewBox="0 0 24 24" aria-hidden="true">
-<circle cx="12" cy="12" r="12" fill="#fff"/>
-<path d="M5.5 11.8l11.6-4.5c.5-.2 1 .1.8.9l-2 9.3c-.1.6-.5.8-1 .5l-3-2.2-1.4 1.4c-.2.2-.3.3-.6.3l.2-3.1 5.6-5.1c.2-.2 0-.3-.4-.1l-6.9 4.4-3-.9c-.6-.2-.6-.6.1-.9z" fill="#13315c"/>
-</svg>
+  <p class="micro">
+    Free Educational Community • Learn Responsibly
+  </p>
 
-JOIN FREE TELEGRAM CHANNEL
-</a>
+  <!-- Advertiser Section -->
+  <div style="text-align:center;font-family:Arial;margin:14px 0">
+    <div style="font-size:12px;color:#9aaab3;margin-bottom:12px">
+      Advertised by <b style="color:#d5e1e8">Growix Ad Agency</b>
+    </div>
+    <a href="https://t.me/GrowixAds" target="_blank" rel="noopener"
+    style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid #168db3;border-radius:30px;background:#102b37;color:#d8edf5;text-decoration:none;font-size:13px;font-weight:600">
+    <span style="color:#35bde7">➤</span> @GrowixAds
+    </a>
+  </div>
 
-<p class="free">✅ <b>Bilkul Free</b> · <span lang="ur" dir="rtl">بالکل مفت</span></p>
+  <p class="disclaimer">
+    <b>Important Disclaimer:</b>
+    Educational information only, not personalized
+    financial advice, trading signals or buy/sell
+    recommendations. Investing carries risk of loss.
+    No returns are guaranteed. References to
+    ethical or halal investing do not certify
+    any specific asset or transaction as
+    Shariah-compliant. Seek independent qualified
+    financial and religious guidance where needed.
+  </p>
 
-<div style="text-align:center;font-family:Arial;margin:14px 0">
-<div style="font-size:12px;color:#9aaab3;margin-bottom:12px">
-Advertised by <b style="color:#d5e1e8">Growix Ad Agency</b>
-</div>
+  <nav class="legal" aria-label="Legal information">
+    <button type="button" data-modal="privacy">
+      Privacy Policy
+    </button>
+    <span>•</span>
+    <button type="button" data-modal="terms">
+      Terms &amp; Conditions
+    </button>
+  </nav>
 
-<a href="https://t.me/GrowixAds" target="_blank" rel="noopener"
-style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid #168db3;border-radius:30px;background:#102b37;color:#d8edf5;text-decoration:none;font-size:13px;font-weight:600">
-<span style="color:#35bde7">➤</span> @GrowixAds
-</a>
-</div>
-
-<hr>
-
-<p class="disc">
-<b>Disclaimer:</b> This channel shares stock market education only. We do not give buy/sell recommendations, tips or signals and are not SEBI registered. Investing involves risk. Shariah views on specific stocks can differ; please consult a qualified scholar and do your own research.
-</p>
-
-<p class="links">
-<a href="#" id="openPrivacy">Privacy Policy</a> ·
-<a href="mailto:shariahalaaltrader.help@gmail.com">Contact</a>
-</p>
-
+</section>
 </main>
 
-<div class="modal" id="privacy" role="dialog"
-aria-modal="true" aria-labelledby="ppTitle" hidden>
+<!-- PRIVACY POLICY -->
+<div class="overlay" id="privacy">
+  <section class="modal" role="dialog"
+    aria-modal="true" aria-labelledby="privacyTitle">
 
-<div class="mbox">
+    <button class="close" type="button"
+      aria-label="Close Privacy Policy">×</button>
 
-<button class="mclose" id="closePrivacy" aria-label="Close">✕</button>
+    <h2 id="privacyTitle">Privacy Policy</h2>
 
-<h2 id="ppTitle">Privacy Policy</h2>
-<small>Last updated: November 2026</small>
+    <p>
+      This landing page provides educational
+      information under the name Hafiz Zayan
+      Sidduqui.
+    </p>
 
-<h3>Who we are</h3>
-<p>Haji Salman Memon shares stock market education with a Shariah-focused approach.</p>
+    <h3>1. Analytics and Advertising</h3>
+    <p>
+      This website uses Meta Pixel to measure
+      page views and Telegram button interactions.
+      Meta Pixel may process browser, device,
+      cookie and interaction information.
+    </p>
 
-<h3>What we collect</h3>
-<p>This website uses Meta Pixel for advertising measurement. Meta may collect technical information such as browser, device and page activity according to its privacy policy.</p>
+    <h3>2. Purpose of Tracking</h3>
+    <p>
+      Analytics may be used to measure advertising
+      performance and understand website activity.
+    </p>
 
-<h3>Third parties</h3>
-<p>Meta: <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a>. Telegram's privacy policy applies when you visit or join Telegram.</p>
+    <h3>3. External Platforms</h3>
+    <p>
+      Clicking the Telegram button opens a
+      third-party platform. Telegram's own
+      privacy policies and terms apply.
+    </p>
 
-<h3>Not financial advice</h3>
-<p>All content is for educational purposes only. We do not provide investment advice or guarantee returns.</p>
+    <h3>4. Privacy Choices</h3>
+    <p>
+      Visitors can manage browser cookies and
+      available Meta privacy settings.
+      Applicable consent requirements must
+      also be respected.
+    </p>
 
-<h3>Contact</h3>
-<p><a href="mailto:shariahalaaltrader.help@gmail.com">shariahalaaltrader.help@gmail.com</a></p>
-
+    <h3>5. Contact</h3>
+    <p>
+      Privacy questions may be directed to
+      the website operator. A valid contact
+      email should be published before
+      launching this page.
+    </p>
+  </section>
 </div>
+
+<!-- TERMS AND CONDITIONS -->
+<div class="overlay" id="terms">
+  <section class="modal" role="dialog"
+    aria-modal="true" aria-labelledby="termsTitle">
+
+    <button class="close" type="button"
+      aria-label="Close Terms and Conditions">×</button>
+
+    <h2 id="termsTitle">Terms &amp; Conditions</h2>
+
+    <h3>1. Educational Purpose</h3>
+    <p>
+      Content is for general financial education
+      only and does not constitute personalized
+      investment or trading advice.
+    </p>
+
+    <h3>2. Financial Risk</h3>
+    <p>
+      Investing and trading can lead to
+      partial or complete loss of capital.
+      No investment returns are guaranteed.
+    </p>
+
+    <h3>3. Ethical and Religious References</h3>
+    <p>
+      Discussions of Islamic finance or halal
+      investing are general educational
+      information. They are not a religious
+      ruling, certification or endorsement
+      of any particular financial product.
+    </p>
+
+    <h3>4. Independent Decisions</h3>
+    <p>
+      Visitors should conduct independent
+      research and consult qualified
+      financial or religious professionals
+      where appropriate.
+    </p>
+
+    <h3>5. Third-Party Platforms</h3>
+    <p>
+      Telegram operates independently and
+      has its own terms and policies.
+    </p>
+
+    <h3>6. Changes</h3>
+    <p>
+      Educational content and these terms
+      may be updated as necessary.
+    </p>
+  </section>
 </div>
 
+<!-- CTA + MODAL SCRIPT -->
 <script>
 (function(){
+  "use strict";
 
-const privacy = document.getElementById('privacy');
-const openPrivacy = document.getElementById('openPrivacy');
-const closePrivacy = document.getElementById('closePrivacy');
-const joinButton = document.getElementById('telegramJoin');
+  // Subscribe fires only once per page load.
+  // Native Telegram navigation is not delayed or blocked.
+  const joinBtn=document.getElementById("joinBtn");
+  let subscribeSent=false;
 
-openPrivacy.addEventListener('click',function(event){
-event.preventDefault();
-privacy.hidden = false;
-});
+  if(joinBtn){
+    joinBtn.addEventListener("click",function(){
+      if(subscribeSent)return;
+      subscribeSent=true;
 
-closePrivacy.addEventListener('click',function(){
-privacy.hidden = true;
-});
+      if(typeof window.fbq==="function"){
+        window.fbq("track","Subscribe");
+      }
+    },{once:true});
+  }
 
-privacy.addEventListener('click',function(event){
-if(event.target === privacy) privacy.hidden = true;
-});
+  const overlays={
+    privacy:document.getElementById("privacy"),
+    terms:document.getElementById("terms")
+  };
 
-document.addEventListener('keydown',function(event){
-if(event.key === 'Escape') privacy.hidden = true;
-});
+  let active=null;
+  let previousFocus=null;
 
-// Contact fires once on a genuine user click.
-let contactSent = false;
+  function openModal(name){
+    const overlay=overlays[name];
+    if(!overlay)return;
 
-joinButton.addEventListener('click',function(event){
+    if(active)active.classList.remove("open");
 
-if(!event.isTrusted || contactSent) return;
+    previousFocus=document.activeElement;
+    active=overlay;
+    overlay.classList.add("open");
+    document.body.classList.add("modal-open");
+    overlay.querySelector(".close").focus();
+  }
 
-contactSent = true;
+  function closeModal(){
+    if(!active)return;
 
-if(typeof window.fbq === 'function'){
-window.fbq('track', 'Subscribe');
-}
+    active.classList.remove("open");
+    active=null;
+    document.body.classList.remove("modal-open");
 
-},{once:true});
+    if(previousFocus&&previousFocus.focus){
+      previousFocus.focus();
+    }
+  }
 
+  document.querySelectorAll("[data-modal]")
+    .forEach(function(button){
+      button.addEventListener("click",function(){
+        openModal(button.dataset.modal);
+      });
+    });
+
+  Object.values(overlays).forEach(function(overlay){
+    overlay.querySelector(".close")
+      .addEventListener("click",closeModal);
+
+    overlay.addEventListener("click",function(event){
+      if(event.target===overlay)closeModal();
+    });
+  });
+
+  document.addEventListener("keydown",function(event){
+    if(!active)return;
+
+    if(event.key==="Escape"){
+      closeModal();
+      return;
+    }
+
+    if(event.key==="Tab"){
+      const focusable=Array.from(
+        active.querySelectorAll("button:not([disabled]),a[href]")
+      );
+
+      if(!focusable.length)return;
+
+      const first=focusable[0];
+      const last=focusable[focusable.length-1];
+
+      if(event.shiftKey&&document.activeElement===first){
+        event.preventDefault();
+        last.focus();
+      }else if(!event.shiftKey&&document.activeElement===last){
+        event.preventDefault();
+        first.focus();
+      }
+    }
+  });
 })();
 </script>
 
